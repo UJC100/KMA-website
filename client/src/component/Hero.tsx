@@ -12,6 +12,7 @@ const Hero = () => {
       career acceleration.</p>
       <button className='flex items-center gap-2 text-2xl font-medium cursor-pointer mt-4 mb-5 group border rounded-full p-4 hover:bg-black/60 hover:text-amber-400 hover:border-black transition-colors duration-200'>Join Our Team <img src={assets.arrowIcon} alt="arrow-icon" className='invert group-hover:translate-x-1 transition-all mt-1' /></button>
     </div>
+    
     );
 };
 
