@@ -35,7 +35,7 @@ const HeadOn = () => {
 
 
         <p className='text-sm md:text-[17px] text-gray-600/90 mt-2 max-w-174'>And the best part? It won’t cost you a monthly subscription to join us.</p>
-          <button className=' text-sm font-medium cursor-pointer mt-4 mb-5 py-2 px-6 rounded-[5px] bg-gradient-to-l from-yellow-400 via-yellow-500 to-yellow-600 hover:text-blue-950 transition-colors duration-200 text-gray-600'>Find Your Mentor Today</button>
+          <button className=' text-sm font-medium cursor-pointer mt-4 mb-5 py-2 px-6 rounded-[5px] bg-gradient-to-l from-yellow-400 via-yellow-500 to-yellow-600 hover:text-blue-950 transition-colors duration-200 text-gray-600 shadow-xl'>Find Your Mentor Today</button>
     </div>
   );
 };
