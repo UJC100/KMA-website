@@ -4,7 +4,7 @@ import { assets } from '../assets/assets';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-start justify-center px-6 md:px-16 lg:px-24 xl:px-32 text-white bg-black/70 bg-blend-overlay bg-[url('/src/assets/heroImage3.jpg')]  bg-no-repeat bg-cover bg-center h-screen ">
+    <div className="flex flex-col items-start justify-center px-6 md:px-16 lg:px-24 xl:px-32 text-white bg-black/70 bg-blend-overlay bg-[url('/src/assets/premium-photo.jpeg')]  bg-no-repeat bg-cover bg-center h-screen ">
       <p className='bg-amber-300/50 text-amber-950 px-3.5 p-y rounded-full mt-20'>The Ultimate Coaching Experience</p>
       <h1 className='font-playfair text-2xl md:text-[56px] md:font-extrabold max-w-[45rem] mt-4'>Unlock Your <span className='border font-playfair bg-black/60 p-2 rounded-2xl text-amber-400'>Potential</span> Faster.
       Expert Mentors Await.</h1>

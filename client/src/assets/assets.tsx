@@ -1,4 +1,4 @@
-import logo from './kma.svg'
+import logo from './Logo KMA.png'
 import searchIcon from './searchIcon.svg'
 import userIcon from './userIcon.svg'
 import calenderIcon from './calenderIcon.svg'

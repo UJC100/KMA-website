@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from '../component/Hero';
 import PersonalizedSection from '../component/PersonalizedSection';
 import HeadOn from '../component/HeadOn';
+import GlobalNetwork from '../component/GlobalNetwork';
 
 
 const Home = () => {
@@ -10,6 +11,7 @@ const Home = () => {
     <Hero/>
     <PersonalizedSection/>
     <HeadOn/>
+    <GlobalNetwork/>
     </>
   );
 };

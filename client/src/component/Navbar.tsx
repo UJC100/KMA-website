@@ -41,7 +41,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <Link to='/' className="flex
                  items-center h-32">
-                    <img src={assets.logo} alt="logo" className={`h-full w-auto invert ${isScrolled && "invert-0 opacity-80"}`} />
+                    <img src={assets.logo} alt="logo" className={`h-full w-auto`} />
                     
                 </Link>
 
