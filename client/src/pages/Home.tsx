@@ -3,6 +3,7 @@ import Hero from '../component/Hero';
 import PersonalizedSection from '../component/PersonalizedSection';
 import HeadOn from '../component/HeadOn';
 import GlobalNetwork from '../component/GlobalNetwork';
+import MeetOurMentors from '../component/MeetOurMentors';
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
     <PersonalizedSection/>
     <HeadOn/>
     <GlobalNetwork/>
+    <MeetOurMentors/>
     </>
   );
 };
