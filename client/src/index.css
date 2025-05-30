@@ -16,3 +16,23 @@
 .font-playfair {
   font-family: playfair !important;
 }
+
+.food-card.center-food {
+  transform: scale(1.2) !important;
+  opacity: 1;
+  z-index: 2;
+}
+.food-card.left-food {
+  opacity: 1;
+  z-index: 1;
+}
+.food-card.right-food {
+  opacity: 1;
+  z-index: 1;
+}
+.food-card.left-food2 {
+  opacity: 1;
+}
+.food-card.right-food2 {
+  opacity: 1;
+}
