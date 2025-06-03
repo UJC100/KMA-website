@@ -38,10 +38,16 @@ import listIcon from "./listIcon.svg";
 import uploadArea from "./uploadArea.svg";
 import totalBookingIcon from "./totalBookingIcon.svg";
 import totalRevenueIcon from "./totalRevenueIcon.svg";
-
+import fearOfPublic from "./fear-of-speaking.webp"
+import imposterSyndrome from "./imposter-syndrome.jpg"
+import remoteWork from "./remote-work.jpg"
+ 
 
 export const assets = {
     logo,
+    fearOfPublic,
+    imposterSyndrome,
+    remoteWork,
     searchIcon,
     userIcon,
     calenderIcon,

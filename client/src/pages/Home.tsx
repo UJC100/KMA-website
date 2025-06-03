@@ -5,6 +5,7 @@ import HeadOn from '../component/HeadOn';
 import GlobalNetwork from '../component/GlobalNetwork';
 import MeetOurMentors from '../component/MeetOurMentors';
 import StartJourney from '../component/StartJourney';
+import RealWorld from '../component/RealWorld';
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
     <GlobalNetwork/>
     <MeetOurMentors/>
     <StartJourney/>
+    <RealWorld/>
     </>
   );
 };

@@ -1,5 +1,7 @@
 import { CalendarIcon, ChatBubbleLeftRightIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
+import { assets } from "../assets/assets";
+
 export const demoData = [
   {
     picture: "https://randomuser.me/api/portraits/men/32.jpg",
@@ -76,4 +78,25 @@ export const startJourneyCardData = [
     title:'Connect & Grow',
     subtitle: 'Meet your mentor, gain valuable insights, and accelerate your progress.'
   },
+]
+
+export const articlesData = [
+    {
+      image: assets.fearOfPublic,
+      title: 'Fear of Public Speaking',
+      subtitle: 'Learn to control nerves, engage your audience, and present with confidence.',
+
+    },
+    {
+      image: assets.imposterSyndrome,
+      title: 'Overcoming Impostor Syndrome',
+      subtitle: 'Say goodbye to self-doubt. Get tips from mentors who’ve been there.',
+
+    },
+    {
+      image: assets.remoteWork,
+      title: 'Remote Work',
+      subtitle: 'Navigate time zones, virtual communication, and team engagement effectively.',
+
+    },
 ]

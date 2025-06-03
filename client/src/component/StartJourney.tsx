@@ -1,6 +1,7 @@
 import React from 'react';
 import Title from './Title';
 import { startJourneyCardData } from './demoData';
+import AnimateOnScroll from './AnimationOnScroll';
 
 
 
@@ -8,12 +9,16 @@ const StartJourney = () => {
     
   return (
         <div className="flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32  gap-3 pt-20 pb-50">
+            <AnimateOnScroll direction='down' distance={60}>
             <Title
             title='Start Your Mentorship Journey'
             subtitle='Getting started is simple. Follow these three steps.'
             font=''
             align=''
             />
+            </AnimateOnScroll>
+
+            <AnimateOnScroll direction='down' distance={60} delay={0.4}>
 
             <div className='flex flex-col md:flex-row justify-between items-center gap-5 mt-12'>
                 {startJourneyCardData.map((data, i) => {
@@ -29,6 +34,7 @@ const StartJourney = () => {
                     </div>)
 })}
             </div>
+            </AnimateOnScroll>
         </div>
     );
 };
