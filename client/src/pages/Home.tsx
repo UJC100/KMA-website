@@ -4,6 +4,7 @@ import PersonalizedSection from '../component/PersonalizedSection';
 import HeadOn from '../component/HeadOn';
 import GlobalNetwork from '../component/GlobalNetwork';
 import MeetOurMentors from '../component/MeetOurMentors';
+import StartJourney from '../component/StartJourney';
 
 
 const Home = () => {
@@ -14,6 +15,7 @@ const Home = () => {
     <HeadOn/>
     <GlobalNetwork/>
     <MeetOurMentors/>
+    <StartJourney/>
     </>
   );
 };

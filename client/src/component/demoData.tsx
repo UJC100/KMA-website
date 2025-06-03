@@ -1,3 +1,5 @@
+import { CalendarIcon, ChatBubbleLeftRightIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+
 export const demoData = [
   {
     picture: "https://randomuser.me/api/portraits/men/32.jpg",
@@ -56,3 +58,22 @@ export const demoData = [
     speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
   }
 ];
+
+
+export const startJourneyCardData = [
+  {
+    icon: MagnifyingGlassIcon ,
+    title:'Find Your Mentor',
+    subtitle: 'Browse profiles or search by category to find the perfect expert for your needs.'
+  },
+  {
+    icon: CalendarIcon ,
+    title:'Schedule a Session',
+    subtitle: 'Check mentor availability and book a 1:1 session at a time that works for you.'
+  },
+  {
+    icon: ChatBubbleLeftRightIcon ,
+    title:'Connect & Grow',
+    subtitle: 'Meet your mentor, gain valuable insights, and accelerate your progress.'
+  },
+]

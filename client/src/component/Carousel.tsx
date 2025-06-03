@@ -141,7 +141,7 @@ const Carousel = ({images, limit}: CarouselProps) => {
       </div>
 
       {/* Dots */}
-      <div className="absolute bottom-7 flex space-x-2 z-50">
+      <div className="absolute bottom-7 flex space-x-2 ">
         {images.map((_, i) => (
           <button
             key={i}
