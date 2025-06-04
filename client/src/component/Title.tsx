@@ -1,10 +1,10 @@
 import React from 'react';
 
 interface Props {
-    title: string;
-    subtitle: string;
-    align: string;
-    font: string
+    title?: string;
+    subtitle?: string;
+    align?: string;
+    font?: string
 }
 
 const Title = ({title, subtitle, align, font}: Props) => {

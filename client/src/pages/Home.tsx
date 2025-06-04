@@ -6,6 +6,7 @@ import GlobalNetwork from '../component/GlobalNetwork';
 import MeetOurMentors from '../component/MeetOurMentors';
 import StartJourney from '../component/StartJourney';
 import RealWorld from '../component/RealWorld';
+import Testimonials from '../component/Testimonials';
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
     <MeetOurMentors/>
     <StartJourney/>
     <RealWorld/>
+    <Testimonials/>
     </>
   );
 };

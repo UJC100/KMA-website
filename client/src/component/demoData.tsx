@@ -100,3 +100,90 @@ export const articlesData = [
 
     },
 ]
+
+export const testimonials = [
+    {
+    name: 'Emily Johnson',
+    position: 'Product Manager',
+    text: 'Working with this team has been an absolute pleasure. They turned our vision into reality!',
+    image: 'https://randomuser.me/api/portraits/women/1.jpg',
+  },
+  {
+    name: 'Michael Smith',
+    position: 'Software Engineer',
+    text: 'The level of professionalism and creativity they bring to the table is unmatched.',
+    image: 'https://randomuser.me/api/portraits/men/2.jpg',
+  },
+  {
+    name: 'Sophia Lee',
+    position: 'UX Designer',
+    text: 'The final product exceeded our expectations. Thank you for your hard work!',
+    image: 'https://randomuser.me/api/portraits/women/3.jpg',
+  },
+  {
+    name: 'James Williams',
+    position: 'Marketing Lead',
+    text: 'The entire process was smooth, efficient, and enjoyable. Highly recommended!',
+    image: 'https://randomuser.me/api/portraits/men/4.jpg',
+  },
+  {
+    name: 'Olivia Martinez',
+    position: 'CEO',
+    text: 'I appreciate the dedication and commitment to excellence. Great job!',
+    image: 'https://randomuser.me/api/portraits/women/5.jpg',
+  },
+  {
+    name: 'David Brown',
+    position: 'Operations Manager',
+    text: 'Their attention to detail and creativity truly shine through.',
+    image: 'https://randomuser.me/api/portraits/men/6.jpg',
+  },
+  {
+    name: 'Ava Taylor',
+    position: 'HR Specialist',
+    text: 'A wonderful team to work with! They understood our needs perfectly.',
+    image: 'https://randomuser.me/api/portraits/women/7.jpg',
+  },
+  {
+    name: 'William Anderson',
+    position: 'CTO',
+    text: 'This project was completed ahead of schedule with exceptional quality.',
+    image: 'https://randomuser.me/api/portraits/men/8.jpg',
+  },
+  {
+    name: 'Mia Hernandez',
+    position: 'Creative Director',
+    text: 'Their innovative approach and dedication brought our project to life.',
+    image: 'https://randomuser.me/api/portraits/women/9.jpg',
+  },
+  {
+    name: 'Benjamin Wilson',
+    position: 'Financial Analyst',
+    text: 'I was impressed by their professionalism and commitment to the project.',
+    image: 'https://randomuser.me/api/portraits/men/10.jpg',
+  },
+  {
+    name: 'Charlotte Davis',
+    position: 'Account Manager',
+    text: 'They truly understood our brand and delivered beyond expectations.',
+    image: 'https://randomuser.me/api/portraits/women/11.jpg',
+  },
+  {
+    name: 'Daniel Miller',
+    position: 'Data Scientist',
+    text: 'Exceptional work! They were easy to communicate with and very reliable.',
+    image: 'https://randomuser.me/api/portraits/men/12.jpg',
+  },
+  {
+    name: 'Harper Moore',
+    position: 'Legal Counsel',
+    text: 'The experience was seamless and the results were outstanding.',
+    image: 'https://randomuser.me/api/portraits/women/13.jpg',
+  },
+  {
+    name: 'Elijah Thompson',
+    position: 'Customer Success',
+    text: 'From start to finish, they handled everything with care and expertise.',
+    image: 'https://randomuser.me/api/portraits/men/14.jpg',
+  },
+];
