@@ -7,6 +7,7 @@ import MeetOurMentors from '../component/MeetOurMentors';
 import StartJourney from '../component/StartJourney';
 import RealWorld from '../component/RealWorld';
 import Testimonials from '../component/Testimonials';
+import CallToAction from '../component/CallToAction';
 
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
     <StartJourney/>
     <RealWorld/>
     <Testimonials/>
+    <CallToAction/>
     </>
   );
 };
