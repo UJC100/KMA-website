@@ -32,7 +32,7 @@ const GlobalNetwork = () => {
       />
         </AnimationOnScroll>
 
-      <div ref={ref} className="grid grid-cols-2 lg:grid-cols-4 gap-3 py-10">
+      <div ref={ref} className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 py-10">
         <div className="flex flex-col justify-center items-center p-6 px-18 rounded shadow-xl backdrop-blur-md bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-700/70 bg-opacity-30  text-gray-700">
           <span>
             <StarIcon className="h-8 w-8" />

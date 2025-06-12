@@ -6,7 +6,7 @@ import AnimateOnScroll from "./AnimationOnScroll";
 
 const PersonalizedSection = () => {
   return (
-    <div className="flex flex-row items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32  gap-2 py-20  ">
+    <div className="flex flex-col md:flex-row items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32  gap-2 py-20  ">
       <AnimateOnScroll direction="right" distance={-100} delay={0.6} className="flex flex-col justify-center items-start">
         <p className="bg-amber-400/50 text-amber-700 px-3.5 py-1 rounded-full mt-20">
           Why Mentoring Club?
@@ -25,9 +25,12 @@ const PersonalizedSection = () => {
         <button className='flex items-center justify-center gap-2 text-xl font-normal cursor-pointer mt-4 mb-5 group transition-colors duration-200 '>Explore Mentors <ArrowLongRightIcon className=' group-hover:translate-x-1 transition-all mt-1 w-6 h-6' /></button>
       </AnimateOnScroll>
 
+    <div className="overflow-hidden">
+
       <AnimateOnScroll direction="left" distance={100} delay={0.6}>
      <img src={assets.personalized} alt="mentor-image" className="w-[670px] h-[500px] rounded-xl" />
       </AnimateOnScroll>
+    </div>
     </div>
   );
 };

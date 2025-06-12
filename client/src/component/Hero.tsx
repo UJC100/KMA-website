@@ -13,12 +13,12 @@ const Hero = () => {
       <AnimateOnScroll
         direction="zoom"
         scaleLevel={0.7}
-        className="flex flex-col items-start justify-center px-6 md:px-16 lg:px-24 xl:px-32 h-screen"
+        className="flex flex-col items-center md:items-start justify-center px-6 md:px-16 lg:px-24 xl:px-32 h-screen"
       >
         <p className="bg-amber-300/50 text-amber-950 px-3.5 p-y rounded-full mt-20">
           The Ultimate Coaching Experience
         </p>
-        <h1 className="font-playfair text-2xl md:text-[56px] md:font-extrabold max-w-[45rem] mt-4">
+        <h1 className="font-playfair text-3xl md:text-[56px] md:font-extrabold max-w-[45rem] mt-4">
           Unlock Your{" "}
           <span className=" rounded-2xl bg-black/60 px-2 pt-2 pb-3 w-48 ">
           <TypeAnimation
@@ -39,8 +39,8 @@ const Hero = () => {
           </span>
           {" "}
         </h1>
-        <h1 className="font-playfair text-2xl md:text-[56px] md:font-extrabold max-w-[45rem] mt-4">Expert Mentors Await.</h1>
-        <p className="max-w-130 mt-2 text-sm md:text-base">
+        <h1 className="font-playfair text-3xl md:text-[56px] md:font-extrabold max-w-[45rem]">Expert Mentors Await.</h1>
+        <p className=" md:max-w-130 text-center md:text-start mt-2 text-sm md:text-base">
           Connect 1:1 with industry leaders for personalized guidance and career
           acceleration.
         </p>

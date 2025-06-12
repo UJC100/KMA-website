@@ -29,7 +29,7 @@ const Testimonials = () => {
                 {testimonials.map((testimonial, i) => {
                     const randomColor = bgColors[Math.floor(Math.random() * bgColors.length)];
 
-                    return <div key={i} className={`flex flex-col md:flex-row justify-center items-center gap-6 max-w-[450px] ${randomColor} rounded-full pr-5`}>
+                    return <div key={i} className={`flex md:flex-row justify-center items-center gap-6 max-w-[450px] ${randomColor} rounded-full pr-5`}>
                         <img src={testimonial.image} alt={testimonial.name} className='rounded-full  h-40 w-40'/>
                         <div>
                             <p className='text-sm text-gray-700 italic'>{`"${testimonial.text}"`}</p>
@@ -46,7 +46,7 @@ const Testimonials = () => {
                 {testimonials.map((testimonial, i) => {
                     const randomColor = bgColors[Math.floor(Math.random() * bgColors.length)];
 
-                    return <div key={i} className={`flex flex-col md:flex-row justify-center items-center gap-6 max-w-[450px] ${randomColor} rounded-full pr-5`}>
+                    return <div key={i} className={`flex md:flex-row justify-center items-center gap-6 max-w-[450px] ${randomColor} rounded-full pr-5`}>
                         <img src={testimonial.image} alt={testimonial.name} className='rounded-full  h-40 w-40'/>
                         <div>
                             <p className='text-sm text-gray-700 italic'>{`"${testimonial.text}"`}</p>
@@ -63,7 +63,7 @@ const Testimonials = () => {
                 {testimonials.map((testimonial, i) => {
                     const randomColor = bgColors[Math.floor(Math.random() * bgColors.length)];
 
-                    return <div key={i} className={`flex flex-col md:flex-row justify-center items-center gap-6 max-w-[450px] ${randomColor} rounded-full pr-5`}>
+                    return <div key={i} className={`flex md:flex-row justify-center items-center gap-6 max-w-[450px] ${randomColor} rounded-full pr-5`}>
                         <img src={testimonial.image} alt={testimonial.name} className='rounded-full  h-40 w-40'/>
                         <div>
                             <p className='text-sm text-gray-700 italic'>{`"${testimonial.text}"`}</p>

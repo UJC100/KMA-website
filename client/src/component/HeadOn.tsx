@@ -17,7 +17,7 @@ const HeadOn = () => {
         />
        </AnimateOnScroll>
 
-        <AnimateOnScroll direction='down' distance={60} delay={0.7} className='flex flex-row items-center gap-7 my-8'>
+        <AnimateOnScroll direction='down' distance={60} delay={0.7} className='flex flex-col md:flex-row items-center gap-7 my-8'>
             <div className='flex flex-col gap-3  rounded-xl shadow-xl bg-white  p-7 font-light text-sm'>
                 <h2 className='text-[17.5px] font-medium  text-blue-950'>What if you had a safe space to ask any question?</h2>
                 <p className='text-gray-500'>Imagine having seasoned leaders just a message away—ready to help you handle difficult
@@ -38,7 +38,7 @@ const HeadOn = () => {
         </AnimateOnScroll>
 
 
-        <AnimateOnScroll direction='down' distance={60} delay={0.4} className='text-sm md:text-[17px] text-gray-600/90 mt-2 max-w-174'>And the best part? It won’t cost you a monthly subscription to join us.</AnimateOnScroll>
+        <AnimateOnScroll direction='down' distance={60} delay={0.4} className='text-center md:text-start text-sm md:text-[17px] text-gray-600/90 mt-2 max-w-174'>And the best part? It won’t cost you a monthly subscription to join us.</AnimateOnScroll>
 
 
           <AnimateOnScroll direction='down' distance={60} delay={0.1} className=' text-sm font-medium cursor-pointer mt-4 mb-5 py-2 px-6 rounded-[5px] bg-gradient-to-l from-yellow-400 via-yellow-500 to-yellow-600 hover:text-blue-950 transition-colors duration-200 text-gray-600 shadow-xl'>Find Your Mentor Today</AnimateOnScroll>

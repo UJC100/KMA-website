@@ -6,7 +6,7 @@ import AnimateOnScroll from "./AnimationOnScroll";
 
 const RealWorld = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32  gap-3 pt-20 pb-30 bg-slate-50">
+    <div className=" flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32  gap-3 pt-20 pb-30 bg-slate-50">
         <AnimateOnScroll direction="down" distance={60}>
       <Title
         title="Explore Real-World Challenges"
@@ -17,11 +17,11 @@ const RealWorld = () => {
         </AnimateOnScroll>
 
         <AnimateOnScroll direction="down" distance={60} delay={0.4}>
-     <div className="flex gap-5 flex-col md:flex-row py-10">
+     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 flex-col md:flex-row py-10">
         {
             articlesData.map((item, i) => {
                 return (
-                    <div key={i} className="flex flex-col w-96 rounded-md bg-slate-50 shadow-xl">
+                    <div key={i} className="flex flex-col max-w-96 rounded-md bg-slate-50 shadow-xl">
                         
                         <img src={item.image} alt={item.title} className="object-cover w-full  h-40 rounded-t-md"/>
                        
@@ -42,7 +42,7 @@ const RealWorld = () => {
      
 
         <AnimateOnScroll direction="down" distance={60} delay={0.4} className="flex flex-col justify-center items-center gap-5">
-            <p className="text-gray-600">Curious about other challenges? Explore our entire problem directory.</p>
+            <p className="text-gray-600 text-center md:text-start">Curious about other challenges? Explore our entire problem directory.</p>
             <button className='flex items-center justify-center py-2 px-4 rounded-md  gap-2 text-sm font-normal cursor-pointer  group bg-gradient-to-l from-yellow-400 via-yellow-500 to-yellow-600 hover:text-blue-950 transition-colors duration-200 text-gray-600 '>See All Problems <ArrowLongRightIcon className=' group-hover:translate-x-1 transition-all w-4 h-4' /></button>
         </AnimateOnScroll>
     </div>

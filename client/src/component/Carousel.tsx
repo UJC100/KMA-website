@@ -90,39 +90,39 @@ const Carousel = ({images, limit}: CarouselProps) => {
   };
 
   return (
-    <div className=" relative w-full h-[400px] flex justify-center items-center overflow-hidden">
+    <div className=" relative w-full h-[650px] md:h-full flex justify-center items-center overflow-hidden">
       {/* Arrows */}
       <ChevronLeftIcon
         onClick={handlePrev}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="w-8 h-8 absolute left-4 text-amber-400 cursor-pointer z-50"
+        className="w-8 h-8 absolute left-0  text-amber-400 cursor-pointer z-50"
       />
       <ChevronRightIcon
         onClick={handleNext}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
-        className="w-8 h-8 absolute right-4 text-amber-400 cursor-pointer z-50"
+        className="w-8 h-8 absolute right-0 md:right-3 text-amber-400 cursor-pointer z-50"
       />
 
       {/* Slides */}
-      <div className="relative w-full h-full flex justify-center items-center">
+      <div className=" relative w-full h-full flex justify-center items-center">
         {imagesArr.map((img, i) => (
           <div
             key={i}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className={`absolute w-[700px] h-[360px] rounded-sm overflow-hidden shadow-2xl transition-all duration-800 ease-in-out transform flex justify-center items-center px-5 gap-5 ${getPositionClasses(
+            className={` absolute w-[280px] md:min-w-full h-[550px] md:h-[350px]  rounded-sm overflow-hidden shadow-2xl transition-all duration-800 ease-in-out transform flex flex-col md:flex-row justify-center items-center  px-7 py-5 gap-5 ${getPositionClasses(
               i
             )}`}
           >
-            <div className='p-[3px] rounded-full bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 inline-block w-60 h-60 flex-shrink-0'>
+            
             <img
               src={img.picture}
               alt={img.occupation}
-              className="bg-slate-400 rounded-full object-cover w-full h-full aspect-square"
+              className="bg-slate-400 rounded-full object-cover md:min-w-[250px] md:min-h-[250px]"
             />
-            </div>
+            
            
 
             <div className='flex flex-col justify-center gap-1'>
@@ -141,7 +141,7 @@ const Carousel = ({images, limit}: CarouselProps) => {
       </div>
 
       {/* Dots */}
-      <div className="absolute bottom-7 flex space-x-2 ">
+      <div className="absolute bottom-4 md:bottom-7 flex space-x-2 ">
         {images.map((_, i) => (
           <button
             key={i}

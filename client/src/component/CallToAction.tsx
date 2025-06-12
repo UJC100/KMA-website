@@ -10,9 +10,9 @@ const CallToAction = () => {
 
 
                     
-                    <h1 className='text-4xl font-bold md:text-[50px] mt-2 max-w-[1000px] font-playfair'>Ready to Elevate Your Career?</h1>
+                    <h1 className='text-4xl text-center  font-bold md:text-[50px] mt-2 max-w-[1000px] font-playfair'>Ready to Elevate Your Career?</h1>
 
-                    <p className='text-gray-400 text-xl w-[70%] text-center'>Join thousands finding success through mentorship. Your next breakthrough is just a session away.</p>
+                    <p className='text-gray-400 text-md md:text-xl w-[70%] text-center'>Join thousands finding success through mentorship. Your next breakthrough is just a session away.</p>
 
                  <button className='flex items-center justify-center py-4 px-6 rounded-md  gap-2 text-xl font-normal cursor-pointer  group bg-gradient-to-l from-yellow-400 via-yellow-500 to-yellow-600 hover:text-blue-950 transition-colors duration-200 text-gray-600 '>Get Started Today <ArrowLongRightIcon className=' group-hover:translate-x-1 transition-all w-4 h-4' /></button>
 

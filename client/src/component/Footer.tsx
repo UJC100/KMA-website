@@ -3,13 +3,15 @@ import { assets } from "../assets/assets"
 const Footer = () => {
     return (
         <div className='bg-[#F6F9FC] text-gray-500/80 pt-8 px-6 md:px-16 lg:px-24 xl:px-32'>
-        <div className='flex flex-wrap justify-between gap-12 md:gap-6'>
+        <div className='grid grid-cols-2 md:grid-cols-4 justify-between items-center gap-12 md:gap-6'>
             <div className='max-w-80'>
-                <img src={assets.logo} alt="logo" className='mb-4 md:h-9 ' />
-                <p className='text-sm'>
+                <div className="flex items-center justify-center md:justify-start">
+                <img src={assets.logo} alt="logo" className=' mb-4 md:h-9 h-28' />
+                </div>
+                <p className='text-sm text-center md:text-start'>
                   Discover the world's most extraordinary places to stay, from boutique, to hotels to luxury villas and private islands.
                 </p>
-                <div className='flex items-center gap-3 mt-4'>
+                <div className='flex items-center justify-center md:justify-start gap-3 mt-4'>
                     
                  <img src={assets.instagramIcon} alt="instagram-icon" className="w-6"/>
 
@@ -49,8 +51,8 @@ const Footer = () => {
                 <p className='mt-3 text-sm'>
                     Subscribe to our newsletter for inspiration and special offers.
                 </p>
-                <div className='flex items-center mt-4'>
-                    <input type="text" className='bg-white rounded-l border border-gray-300 h-9 px-3 outline-none' placeholder='Your email' />
+                <div className='flex items-center mt-4 '>
+                    <input type="text" className='bg-white rounded-l border border-gray-300 h-9 px-3 outline-none w-full' placeholder='Your email' />
                     <button className='flex items-center justify-center bg-black h-9 w-9 aspect-square rounded-r'>
                        <img src={assets.arrowIcon} alt="arrow-icon" className="w-3.5 invert" />
                     </button>
