@@ -44,6 +44,13 @@ import remoteWork from "./remote-work.jpg"
 import aboutUsPhoto1 from "./ali-mkumbwa-v_rp3XooOl0-unsplash.jpg"
 import aboutUsPhoto2 from "./kc-shum-XQ5NaoBUUkM-unsplash.jpg"
 import aboutUsPhoto3 from "./angela-bailey-GfUk_pFtjz0-unsplash.jpg"
+import aboutUsPhoto4 from "./abdullah-ali-_bIyIshKuY8-unsplash.jpg"
+import aboutUsPhoto5 from "./aj-alao-yViyrYmnYvE-unsplash.jpg"
+import aboutUsPhoto6 from "./daniel-adesina-F7OY2Qd5v44-unsplash.jpg"
+import aboutUsPhoto7 from "./francis-odeyemi-AszfTJfly_U-unsplash.jpg"
+import aboutUsPhoto8 from "./justin-jamal-lkdf88pDfqA-unsplash.jpg"
+import aboutUsPhoto9 from "./troy-wade-dYgyzxlHJ58-unsplash.jpg"
+
  
 
 export const assets = {
@@ -86,6 +93,12 @@ export const assets = {
     aboutUsPhoto1,
     aboutUsPhoto2,
     aboutUsPhoto3,
+    aboutUsPhoto4,
+    aboutUsPhoto5,
+    aboutUsPhoto6,
+    aboutUsPhoto7,
+    aboutUsPhoto8,
+    aboutUsPhoto9,
 }
 
 export const cities = [
