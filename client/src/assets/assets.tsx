@@ -41,6 +41,9 @@ import totalRevenueIcon from "./totalRevenueIcon.svg";
 import fearOfPublic from "./fear-of-speaking.webp"
 import imposterSyndrome from "./imposter-syndrome.jpg"
 import remoteWork from "./remote-work.jpg"
+import aboutUsPhoto1 from "./ali-mkumbwa-v_rp3XooOl0-unsplash.jpg"
+import aboutUsPhoto2 from "./kc-shum-XQ5NaoBUUkM-unsplash.jpg"
+import aboutUsPhoto3 from "./angela-bailey-GfUk_pFtjz0-unsplash.jpg"
  
 
 export const assets = {
@@ -79,7 +82,10 @@ export const assets = {
     uploadArea,
     totalBookingIcon,
     totalRevenueIcon,
-    personalized
+    personalized,
+    aboutUsPhoto1,
+    aboutUsPhoto2,
+    aboutUsPhoto3,
 }
 
 export const cities = [

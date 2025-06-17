@@ -8,7 +8,7 @@ import StartJourney from '../component/StartJourney';
 import RealWorld from '../component/RealWorld';
 import Testimonials from '../component/Testimonials';
 import CallToAction from '../component/CallToAction';
-import Footer from '../component/Footer';
+
 
 
 const Home = () => {
@@ -23,7 +23,6 @@ const Home = () => {
     <RealWorld/>
     <Testimonials/>
     <CallToAction/>
-    <Footer/>
     </>
   );
 };

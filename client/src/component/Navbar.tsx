@@ -12,6 +12,7 @@ const Navbar = () => {
         { name: 'About', path: '/about' },
         { name: 'Bookshelf', path: '/books' },
         { name: 'Contact', path: '/contact' },
+        { name: 'Event', path: '/event' },
     ];
 
   
@@ -80,7 +81,7 @@ const Navbar = () => {
                         ) : 
                     
 
-                    <button className="bg-black text-white px-8 py-2.5 rounded-full ml-4 transition-all duration-500">
+                    <button onClick={() => openSignIn()} className="bg-black text-white px-8 py-2.5 rounded-full ml-4 transition-all duration-500 cursor-pointer">
                         Login
                     </button>
 }   
