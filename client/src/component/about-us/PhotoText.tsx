@@ -13,7 +13,7 @@ interface HeroSectionProps {
 const PhotoText = ({flip = false, image, title, description}: HeroSectionProps) => {
   return (
         <div className={`flex flex-col md:flex-row items-center bg-[#f6f4f0] ${
-        flip ? 'md:flex-row-reverse' : ''
+        flip ? 'md:flex-row-reverse ' : ''
       }`}>
         <img src={image} alt={title} className='object-cover md:w-1/2 h-[700px] bg-black/50' />
          <AnimateOnScroll
