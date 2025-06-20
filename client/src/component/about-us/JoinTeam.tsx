@@ -9,26 +9,26 @@ const JoinTeam = () => {
         
         <div className="relative w-full py-24 my-10 bg-white overflow-hidden h-screen flex justify-center items-center">
       {/* Image Collage */}
-      <div className="absolute top-7 left-0 md:w-90 z-0 w-40 h-70">
+      <div className="absolute top-14 md:top-7 left-0 md:w-90 z-0 w-40 h-44 md:h-70">
         <img src={assets.aboutUsPhoto4} alt="Team" className="w-full h-full object-cover shadow-lg" />
       </div>
 
-      <div className="absolute top-0 right-90 w-40 md:w-64 h-40 z-0">
+      <div className="absolute top-0 right-20 md:right-90 w-32 md:w-64 h-20 md:h-40 z-0">
         <img src={assets.aboutUsPhoto5} alt="Team" className="w-full h-full object-cover shadow-lg" />
       </div>
 
-      <div className="absolute bottom-56 left-12 w-50  h-64 z-0">
+      <div className="absolute bottom-32 md:bottom-56 left-3 md:left-12 w-24 md:w-50 h-32 md:h-64 z-1 md:z-0">
         <img src={assets.aboutUsPhoto6} alt="Team" className="w-full h-full object-cover shadow-lg" />
       </div>
 
-      <div className="absolute top-14 right-0 w-60 md:w-60 h-96 z-0">
+      <div className="absolute top-14 md:top-14 right-4 md:right-0 w-32 md:w-60 h-44 md:h-96 z-0">
         <img src={assets.aboutUsPhoto9} alt="Team" className="h-full w-full object-cover shadow-lg" />
       </div>
 
-      <div className="absolute bottom-14 right-12 w-60 md:w-96 h-60 z-0">
+      <div className="absolute bottom-15 md:bottom-14 right-56 md:right-12 w-40 md:w-96 h-28 md:h-60 z-0">
         <img src={assets.aboutUsPhoto8} alt="Team" className="h-full w-full object-cover shadow-lg" />
       </div>
-      <div className=" absolute bottom-10 left-90 right-0 w-40 md:w-64 h-52 z-0">
+      <div className=" absolute bottom-12 md:bottom-10 md:left-90 right-0 w-44 md:w-64 h-40 md:h-52 z-0">
         <img src={assets.aboutUsPhoto7} alt="Team" className="h-full w-full object-cover shadow-lg" />
       </div>
       

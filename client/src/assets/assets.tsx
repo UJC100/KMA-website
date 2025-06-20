@@ -50,6 +50,7 @@ import aboutUsPhoto6 from "./daniel-adesina-F7OY2Qd5v44-unsplash.jpg"
 import aboutUsPhoto7 from "./francis-odeyemi-AszfTJfly_U-unsplash.jpg"
 import aboutUsPhoto8 from "./justin-jamal-lkdf88pDfqA-unsplash.jpg"
 import aboutUsPhoto9 from "./troy-wade-dYgyzxlHJ58-unsplash.jpg"
+import contact from "./patrick-tomasso-fMntI8HAAB8-unsplash.jpg"
 
  
 
@@ -99,6 +100,7 @@ export const assets = {
     aboutUsPhoto7,
     aboutUsPhoto8,
     aboutUsPhoto9,
+    contact
 }
 
 export const cities = [
