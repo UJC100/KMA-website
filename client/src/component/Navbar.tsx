@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { assets } from "../assets/assets";
 import { useClerk, useUser, UserButton } from "@clerk/clerk-react";
 import { CreditCardIcon } from "@heroicons/react/24/outline";
+import Contact from "../pages/Contact";
 
-const Navbar = () => {
+
+// Navbar.tsx or Navbar.jsx (with TypeScript enabled)
+type NavbarProps = {
+  onContactClick: () => void;
+};
+
+const Navbar = ({onContactClick}: NavbarProps) => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -13,9 +20,10 @@ const Navbar = () => {
     { name: "Event", path: "/event" },
   ];
 
-  const [isScrolled, setIsScrolled] = React.useState(false);
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const { openSignIn } = useClerk();
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+   const [showModal, setShowModal] = useState(false);
+  const { openSignIn } = useClerk()
   const { user } = useUser();
   const navigate = useNavigate();
   const location = useLocation();
@@ -51,10 +59,18 @@ const Navbar = () => {
 
       {/* Desktop Nav */}
       <div className="hidden md:flex items-center gap-4 lg:gap-8">
-        {navLinks.map((link, i) => (
-          <a
+        {navLinks.map((link, i) => {
+             const handleClick = (e) => {
+            if (link.name === "Contact") {
+            e.preventDefault();
+            onContactClick();
+            }
+        };
+
+          return <a
             key={i}
             href={link.path}
+            onClick={link.name === "Contact" ? handleClick: undefined}
             className={`group flex flex-col gap-0.5 ${
               isScrolled ? "text-gray-700" : "text-white"
             }`}
@@ -66,7 +82,8 @@ const Navbar = () => {
               } h-0.5 w-0 group-hover:w-full transition-all duration-300`}
             />
           </a>
-        ))}
+        }
+        )}
         {user?.publicMetadata?.role === "admin" && (
           <button
             className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${
@@ -100,6 +117,7 @@ const Navbar = () => {
           </button>
         )}
       </div>
+       <Contact isOpen={showModal} onClose={() => setShowModal(false)} />
 
       {/* Mobile Menu Button */}
       <div className="flex items-center gap-3 md:hidden">

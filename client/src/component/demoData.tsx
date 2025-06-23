@@ -1,5 +1,9 @@
 import { CalendarIcon, ChatBubbleLeftRightIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 
+import { ClockIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
+
+
+
 import { assets } from "../assets/assets";
 
 export const demoData = [
@@ -187,3 +191,21 @@ export const testimonials = [
     image: 'https://randomuser.me/api/portraits/men/14.jpg',
   },
 ];
+
+export const contactDetails =[
+  {
+    icon: PhoneIcon,
+    text:"CALL US",
+    details: "+63 959-9747-534" 
+  },
+  {
+    icon: MapPinIcon,
+    text:"LOCATION",
+    details: "121 Kingdom Building, Taguig, Manila" 
+  },
+  {
+    icon: ClockIcon,
+    text:"BUSINESS HOURS",
+    details: "Mon - Fri : 10am - 8pm" 
+  },
+]

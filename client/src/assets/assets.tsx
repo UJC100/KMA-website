@@ -48,8 +48,8 @@ import aboutUsPhoto4 from "./abdullah-ali-_bIyIshKuY8-unsplash.jpg"
 import aboutUsPhoto5 from "./aj-alao-yViyrYmnYvE-unsplash.jpg"
 import aboutUsPhoto6 from "./daniel-adesina-F7OY2Qd5v44-unsplash.jpg"
 import aboutUsPhoto7 from "./francis-odeyemi-AszfTJfly_U-unsplash.jpg"
-import aboutUsPhoto8 from "./justin-jamal-lkdf88pDfqA-unsplash.jpg"
-import aboutUsPhoto9 from "./troy-wade-dYgyzxlHJ58-unsplash.jpg"
+import aboutUsPhoto9 from "./WhatsApp Image 2025-06-23 at 18.04.02 (2).jpeg"
+import aboutUsPhoto8 from "./troy-wade-dYgyzxlHJ58-unsplash.jpg"
 import contact from "./patrick-tomasso-fMntI8HAAB8-unsplash.jpg"
 
  
