@@ -6,11 +6,15 @@ import Footer from './component/Footer'
 import AboutUs from './pages/AboutUs'
 import Contact from './pages/Contact'
 import { useState } from 'react'
+import JoinTeam from './pages/JoinTeam'
 
 
 
 function App() {
-  const isOwnerPath = useLocation().pathname.includes('owner')
+  const noLayoutPaths = ['/join-team', '/payment', '/success'];
+  const isOwnerPath = useLocation().pathname.startsWith('owner')
+  const hideLayout = isOwnerPath || noLayoutPaths.includes(location.pathname);
+
 
     const [showModal, setShowModal] = useState(false);
 
@@ -20,16 +24,17 @@ function App() {
   return (
     <div>
 
-      {!isOwnerPath && <Navbar onContactClick={handleOpen}/>}
+      {!hideLayout && <Navbar onContactClick={handleOpen}/>}
       <div className='min-h-[70vh]'>
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/about' element={<AboutUs/>}/>
+          <Route path='/join-team' element={<JoinTeam/>}/>
         </Routes>
       </div>
       <Contact isOpen={showModal} onClose={handleClose}/>
       <div>
-        <Footer/>
+        {!hideLayout && <Footer/>}
       </div>
     </div>
   )
