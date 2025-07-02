@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import axios from 'axios'
 
 const JoinTeam = () => {
   type FormValues = {
@@ -69,14 +70,10 @@ const JoinTeam = () => {
 
   if (Object.keys(validationErrors).length > 0) return; 
 
-     const res = await fetch('/api/book-meeting', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(formData),
-  });
+     const res = await axios.post('http://localhost:3000/meetings', formData);
 
-  const data = await res.json();
-  console.log(data)
+  ;
+  console.log(res)
     // navigate("/payment");
   };
   useEffect(()=> {
@@ -119,8 +116,8 @@ const JoinTeam = () => {
       <div className="w-1/2">
         <img src={assets.logo} className="w-30 h-30" alt="logo" />
 
-        <form onSubmit={handleSubmit} className="px-10 py-14 space-y-7">
-          <h2 className="text-5xl md:text-4xl mb-8 font-medium text-gray-800">
+        <form onSubmit={handleSubmit} className="px-10 space-y-5">
+          <h2 className="text-5xl text-center md:text-4xl mb-8 font-medium text-gray-800">
             Join Our Mentee Program
           </h2>
 
