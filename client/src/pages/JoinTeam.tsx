@@ -4,6 +4,8 @@ import { assets } from "../assets/assets";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import axios from 'axios'
+import JoinTeamCarousel from "../component/join-team/JoinTeamCarousel";
+import { demoData } from "../component/demoData";
 
 const JoinTeam = () => {
   type FormValues = {
@@ -191,14 +193,23 @@ const JoinTeam = () => {
           />
           <button
             type="submit"
-            className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
+            className='w-full font-medium cursor-pointer mt-4 mb-5 py-2 px-6 rounded-[5px] bg-gradient-to-l from-yellow-400 via-yellow-500 to-yellow-600 hover:text-blue-950 transition-colors duration-200 text-gray-700 shadow-xl'
           >
-            Proceed to Payment
+            Shedule Meeting
           </button>
         </form>
 
       </div>
-      <div className="bg-amber-500 w-1/2 m-5 rounded-2xl"></div>
+      <div className="bg-[#121820]/90 bg-blend-overlay  bg-[url('/src/assets/blurred-bokeh-light-dark-blue-background_219144-488-2.avif')]  bg-no-repeat bg-cover bg-center  w-1/2 m-5 rounded-2xl pt-25 pb-5 px-15 text-amber-500">
+            <div>
+              <h1 className="text-5xl md:text-4xl mb-4 font-light w-2/3">Guidance made easy — connect, learn, succeed</h1>
+              <p className="text-sm font-light">Enter your details to shedule a meeting with a coach.</p>
+            </div>
+            <div className=" my-7 *:min-h-[300px]  w-full">
+              <JoinTeamCarousel  mentorsData={demoData}/>
+            </div>
+            <div></div>
+      </div>
     </div>
   );
 };

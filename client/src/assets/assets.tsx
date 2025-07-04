@@ -51,6 +51,8 @@ import aboutUsPhoto7 from "./francis-odeyemi-AszfTJfly_U-unsplash.jpg"
 import aboutUsPhoto9 from "./WhatsApp Image 2025-06-23 at 18.04.02 (2).jpeg"
 import aboutUsPhoto8 from "./troy-wade-dYgyzxlHJ58-unsplash.jpg"
 import contact from "./patrick-tomasso-fMntI8HAAB8-unsplash.jpg"
+import JoinTeamBG from "./blurred-bokeh-light-dark-blue-background_219144-488-2.avif"
+
 
  
 
@@ -100,7 +102,8 @@ export const assets = {
     aboutUsPhoto7,
     aboutUsPhoto8,
     aboutUsPhoto9,
-    contact
+    contact,
+    JoinTeamBG
 }
 
 export const cities = [
