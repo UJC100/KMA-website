@@ -1,6 +1,7 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import React, { useEffect, useState} from 'react';
 import { FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 
 type Person = {
@@ -18,6 +19,10 @@ type CarouselProps = {
 
 
 const Carousel = ({images, limit}: CarouselProps) => {
+
+
+    const navigate = useNavigate()
+
     const [imagesArr, setImagesArr] = useState<Person[]>([])
     const  [currentSlide, setCurrentSlide] = useState(0)
     const  [errorMessage, setErrorMessage] = useState(null);
@@ -110,7 +115,7 @@ const Carousel = ({images, limit}: CarouselProps) => {
         {imagesArr.map((img, i) => (
           <div
             key={i}
-            onClick={}
+            onClick={() => navigate(`/mentor/${i}`)}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             className={` absolute w-[280px] md:min-w-full h-[550px] md:h-[350px]  rounded-sm overflow-hidden shadow-2xl transition-all duration-800 ease-in-out transform flex flex-col md:flex-row justify-center items-center  px-7 py-5 gap-5 ${getPositionClasses(
