@@ -106,10 +106,11 @@ const Carousel = ({images, limit}: CarouselProps) => {
       />
 
       {/* Slides */}
-      <div className=" relative w-full h-full flex justify-center items-center">
+      <div className=" relative w-2/3 h-full flex justify-center items-center">
         {imagesArr.map((img, i) => (
           <div
             key={i}
+            onClick={}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             className={` absolute w-[280px] md:min-w-full h-[550px] md:h-[350px]  rounded-sm overflow-hidden shadow-2xl transition-all duration-800 ease-in-out transform flex flex-col md:flex-row justify-center items-center  px-7 py-5 gap-5 ${getPositionClasses(
