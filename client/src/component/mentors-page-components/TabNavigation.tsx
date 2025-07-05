@@ -1,6 +1,7 @@
 import { CalendarIcon, UserIcon } from "@heroicons/react/24/outline";
 import React, { useState } from "react";
 import {  FaCheckCircle } from "react-icons/fa";
+import Form from "../Form";
 
 const TabNavigation = () => {
   const [activeTab, setActiveTab] = useState("profile");
@@ -63,9 +64,8 @@ const TabNavigation = () => {
         )}
 
         {activeTab === "schedule" && (
-          <div>
-            <h2 className="text-xl font-semibold mb-2">Schedule a Session</h2>
-            <p>Booking calendar goes here...</p>
+          <div className="flex justify-center ">
+           <Form paddingY={true} rounded={true} shadow={true} background={true}/>
           </div>
         )}
       </div>

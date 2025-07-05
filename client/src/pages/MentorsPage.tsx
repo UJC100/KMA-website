@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { demoData } from "../component/demoData";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
@@ -13,10 +13,16 @@ const MentorsPage = () => {
     return newId === id;
   });
 
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
+
   if (!mentor) return <div>Mentor Not Found</div>;
 
+
   return (
-    <div className="relative w-full h-min-screen flex flex-col pt-30 px-6 md:px-16 lg:px-24 xl:px-32 overflow-hidden bg-gradient-to-b from-[#eff0ee]-100 to-[#f7f7f7]">
+    <div className="relative w-full h-min-screen flex flex-col pt-30 px-6 md:px-16 lg:px-24 xl:px-32 bg-gradient-to-b from-[#eff0ee]-100 to-[#f7f7f7] overflow-hidden">
+        <div className="  ">
       {/* Blurred profile background */}
       <img
         src={mentor.picture}
@@ -71,12 +77,13 @@ const MentorsPage = () => {
           </div>
         </div>
       </div>
-
-        <>
-        <TabNavigation/>
-        </>
-
     </div>
+
+    <div className="relative z-10">
+        <TabNavigation/>
+    </div>
+    </div>
+    
   );
 };
 
