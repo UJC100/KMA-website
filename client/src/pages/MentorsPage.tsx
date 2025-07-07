@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { demoData } from "../component/demoData";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import TabNavigation from "../component/mentors-page-components/TabNavigation";
+import { CountryFlag } from "../component/CountryFlags";
 
 const MentorsPage = () => {
   const { id } = useParams();
@@ -44,17 +45,17 @@ const MentorsPage = () => {
             />
           </div>
           <div className="mb-4">
-            <h1 className="mt-4 text-xl md:text-3xl font-bold text-gray-800">
-              Shyam Balagurumurthy Viswanathan
+            <h1 className="mt-4 text-xl md:text-3xl font-bold text-gray-800 flex items-center gap-2">
+            {mentor.name} <CountryFlag country={mentor.country} className={'text-4xl'}/>
             </h1>
             <p className="text-gray-600 text-sm md:text-base">
-              AI Research - Integrity at Meta Platforms
+             {mentor.country}
             </p>
 
             {/* Example of categories, you can wrap in flex + wrap for mobile */}
             <div className="mt-3 flex flex-wrap gap-2">
               <span className="bg-black text-amber-400  text-xs px-3 py-2 rounded-full">
-                DataScience & Analytics
+                {mentor.occupation}
               </span>
               <span className="bg-black text-amber-400 text-xs px-3 py-2 rounded-full">
                 Entrepreneurship

@@ -19,7 +19,7 @@ const Hero = () => {
         className="flex flex-col items-center md:items-start justify-center px-6 md:px-16 lg:px-24 xl:px-32 h-screen"
       >
         <p className="bg-amber-300/50 text-amber-950 px-3.5 p-y rounded-full mt-20">
-          The Ultimate Coaching Experience
+          The Ultimate Coaching Experience.
         </p>
         <h1 className="font-playfair text-3xl md:text-[56px] md:font-extrabold max-w-[45rem] mt-4">
           Unlock Your{" "}
