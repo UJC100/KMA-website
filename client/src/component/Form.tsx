@@ -86,17 +86,17 @@ const Form = ({background=false, rounded=false, shadow=false, paddingY=false}: f
   };
 
   return (
-    <form onSubmit={handleSubmit} className={`px-10 space-y-5
+    <form onSubmit={handleSubmit} className={`px-5 md:px-10 space-y-5  
        ${background ? 'bg-[#f6f4f0]': ''} 
        ${shadow ? 'shadow-lg': ''}
        ${rounded? 'rounded-xl' : ''}
        ${paddingY? 'py-6' : ''}
     `}>
-      <h2 className="text-5xl text-center md:text-4xl mb-8 font-medium text-gray-800">
+      <h2 className="text-xl text-center md:text-4xl mb-8 font-medium text-gray-800">
         Join Our Mentee Program
       </h2>
 
-      <div className="flex gap-4">
+      <div className="flex flex-col lg:flex-row gap-4">
         <input
           name="firstName"
           type="text"

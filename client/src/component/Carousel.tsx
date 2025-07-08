@@ -74,7 +74,7 @@ const Carousel = ({images, limit}: CarouselProps) => {
     if(loading) {
         return <div>Laoding data! Please wait...</div>
     }
-    console.log(images)
+  
     
     if(errorMessage !== null) {
         return <div>Error Occured ! {errorMessage}</div>

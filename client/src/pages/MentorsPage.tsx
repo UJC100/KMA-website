@@ -35,16 +35,16 @@ const MentorsPage = () => {
       <div className="absolute inset-0 bg-white/20 backdrop-blur-sm"></div>
 
       {/* Foreground content */}
-      <div className="relative z-10 flex flex-col md:flex-row justify-between items-end">
-        <div className="  flex flex-col md:flex-row items-end  gap-6 px-4">
+      <div className="relative z-10 flex flex-col md:flex-row justify-between items-center md:items-end">
+        <div className=" flex flex-col md:flex-row items-center md:items-end   gap-6 px-4">
           <div>
             <img
               src={mentor.picture}
               alt="Profile"
-              className="w-24 h-24 md:w-48 md:h-48 rounded-full border-4 border-white shadow-lg object-cover"
+              className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-white shadow-lg object-cover"
             />
           </div>
-          <div className="mb-4">
+          <div className="mb-4 flex flex-col items-center md:items-start">
             <h1 className="mt-4 text-xl md:text-3xl font-bold text-gray-800 flex items-center gap-2">
             {mentor.name} <CountryFlag country={mentor.country} className={'text-4xl'}/>
             </h1>
@@ -52,7 +52,6 @@ const MentorsPage = () => {
              {mentor.country}
             </p>
 
-            {/* Example of categories, you can wrap in flex + wrap for mobile */}
             <div className="mt-3 flex flex-wrap gap-2">
               <span className="bg-black text-amber-400  text-xs px-3 py-2 rounded-full">
                 {mentor.occupation}
@@ -80,7 +79,7 @@ const MentorsPage = () => {
       </div>
     </div>
 
-    <div className="relative z-10">
+    <div className="relative z-10 ">
         <TabNavigation/>
     </div>
     </div>

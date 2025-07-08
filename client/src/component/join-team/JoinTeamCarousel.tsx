@@ -62,7 +62,6 @@ const JoinTeamCarousel = ({ mentorsData, limit }: CarouselProps) => {
   if (loading) {
     return <div>Laoding data! Please wait...</div>;
   }
-  console.log(mentorsData);
 
   if (errorMessage !== null) {
     return <div>Error Occured ! {errorMessage}</div>;
@@ -89,11 +88,11 @@ const JoinTeamCarousel = ({ mentorsData, limit }: CarouselProps) => {
               className="bg-slate-400 rounded-full object-cover w-[50px] h-[50px]"
             />
             <div className="flex flex-col justify-center gap-1">
-              <p className="font-light text-gray-400 my-7">
+              <p className="font-light text-gray-400 my-3 md:my-7 text-[12px] md:text-lg">
                 &quot;{img.speech}&quot;
               </p>
-              <h1 className="text-gray-300 font-semibold">{img.name}</h1>
-              <h2 className="font-playfair text-xl">{img.occupation}</h2>
+              <h1 className="text-gray-300 font-semibold text-[15px] md:text-lg">{img.name}</h1>
+              <h2 className="font-playfair text-md md:text-xl">{img.occupation}</h2>
             </div>
           </div>
         ))}

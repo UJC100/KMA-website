@@ -9,7 +9,7 @@ const TabNavigation = () => {
   return (
     <div className="relative z-10 py-8">
       {/* Tabs */}
-      <div className="border-b border-gray-500 flex  space-x-4  ">
+      <div className="border-b border-gray-500 flex space-x-4  ">
         {[
           { key: "profile", label: "Mentor Profile", icon: <UserIcon className="w-5 h-5"/> },
           { key: "schedule", label: "Schedule", icon: <CalendarIcon className="w-5 h-5"/> },
@@ -32,8 +32,8 @@ const TabNavigation = () => {
       {/* Tab Content */}
       <div className="mt-8 ">
         {activeTab === "profile" && (
-          <div className="grid grid-cols-[60%_40%] space-x-7">
-            <p className="rounded-xl bg-white shadow-lg self-start p-8 text-lg font-light text-gray-800 leading-relaxed">
+          <div className="grid md:grid-cols-[60%_40%] md:space-x-7 space-y-7">
+            <p className="rounded-xl bg-white shadow-lg self-start p-8 text-sm md:text-lg  font-light text-gray-800 leading-relaxed">
               Hi - After studying Sociology and Business Economics I started my
               career in the field of pharmaceutical market research in a leading
               international agency (GfK). During this time I have developed
