@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { demoData } from "../component/demoData";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import TabNavigation from "../component/mentors-page-components/TabNavigation";
 import { CountryFlag } from "../component/CountryFlags";
 
@@ -69,7 +69,7 @@ const MentorsPage = () => {
               <FaFacebook />
             </span>
             <span className="cursor-pointer bg-white p-3 rounded-md shadow-lg">
-              <FaInstagram />
+              <FaLinkedin />
             </span>
             <span className="cursor-pointer bg-white p-3 rounded-md shadow-lg">
               <FaTwitter />

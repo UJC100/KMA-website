@@ -3,8 +3,10 @@ import Title from "./Title";
 import { assets } from "../assets/assets";
 import { CheckCircleIcon, UserGroupIcon, CalendarDateRangeIcon, ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import AnimateOnScroll from "./AnimationOnScroll";
+import { useNavigate } from "react-router-dom";
 
 const PersonalizedSection = () => {
+  const navigate = useNavigate()
   return (
     <div className="flex flex-col md:flex-row items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32  gap-2 py-20  ">
       <AnimateOnScroll direction="right" distance={-100} delay={0.6} className="flex flex-col justify-center items-start">
@@ -22,7 +24,7 @@ const PersonalizedSection = () => {
         <p className="flex items-center text-sm font-light text-gray-600/90 gap-4"><CalendarDateRangeIcon className='h-6 w-6 text-green-500'/> Flexible scheduling fits even the busiest calendars.</p>
         <p className="flex items-center text-sm font-light text-gray-600/90 gap-4"> <UserGroupIcon className='h-6 w-6 text-green-500'/> Join a supportive community focused on mutual growth and success.</p>
         </div>
-        <button className='flex items-center justify-center gap-2 text-xl font-normal cursor-pointer mt-4 mb-5 group transition-colors duration-200 '>Explore Mentors <ArrowLongRightIcon className=' group-hover:translate-x-1 transition-all mt-1 w-6 h-6' /></button>
+        <button onClick={() => navigate('/team')} className='flex items-center justify-center gap-2 text-xl font-normal cursor-pointer mt-4 mb-5 group transition-colors duration-200 '>Explore Mentors <ArrowLongRightIcon className=' group-hover:translate-x-1 transition-all mt-1 w-6 h-6' /></button>
       </AnimateOnScroll>
 
     <div className="overflow-hidden">

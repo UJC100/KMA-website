@@ -52,6 +52,15 @@ import aboutUsPhoto9 from "./WhatsApp Image 2025-06-23 at 18.04.02 (2).jpeg"
 import aboutUsPhoto8 from "./troy-wade-dYgyzxlHJ58-unsplash.jpg"
 import contact from "./patrick-tomasso-fMntI8HAAB8-unsplash.jpg"
 import JoinTeamBG from "./blurred-bokeh-light-dark-blue-background_219144-488-2.avif"
+import teamMember1 from "./150-billi-0JsOiptoXdU-unsplash.jpg"
+import teamMember2 from "./alexia-T2SuQ0V41SI-unsplash.jpg"
+import teamMember3 from "./anima-visual-XChQZf4q5-s-unsplash.jpg"
+import teamMember4 from "./jay-soundo-aSUsqzBepd0-unsplash.jpg"
+import teamMember5 from "./josh-batres-8GRNMaUTOg8-unsplash.jpg"
+import teamMember6 from "./kasongo-bulobo-F1HxT0K96aU-unsplash.jpg"
+import teamMember7 from "./maria-fernanda-pissioli-p9N2EnY2V-0-unsplash.jpg"
+import teamMember8 from "./nestergrapher-nedie-bWxV-L9K6u4-unsplash.jpg"
+
 
 
  
@@ -103,7 +112,15 @@ export const assets = {
     aboutUsPhoto8,
     aboutUsPhoto9,
     contact,
-    JoinTeamBG
+    JoinTeamBG,
+    teamMember1,
+    teamMember2,
+    teamMember3,
+    teamMember4,
+    teamMember5,
+    teamMember6,
+    teamMember7,
+    teamMember8,
 }
 
 export const cities = [

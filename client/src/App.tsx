@@ -8,6 +8,7 @@ import Contact from './pages/Contact'
 import { useState } from 'react'
 import JoinTeam from './pages/JoinTeam'
 import MentorsPage from './pages/MentorsPage'
+import Teams from './pages/Teams'
 
 
 
@@ -32,6 +33,7 @@ function App() {
           <Route path='/about' element={<AboutUs/>}/>
           <Route path='/join-team' element={<JoinTeam/>}/>
           <Route path='/mentor/:id' element={<MentorsPage/>}/>
+          <Route path='/team' element={<Teams/>}/>
         </Routes>
       </div>
       <Contact isOpen={showModal} onClose={handleClose}/>
