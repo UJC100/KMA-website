@@ -19,10 +19,10 @@ const TeamCard = ({ teamsData }: CardProps) => {
       {teamsData.map((data, i) => (
         <div
           key={i}
-          className={`md:group relative w-full h-[450px] overflow-hidden shadow-lg cursor-pointer mt-7 flex flex-col justify-end p-6`}
+          className={`group relative w-full h-[450px] overflow-hidden shadow-lg cursor-pointer mt-7 flex flex-col justify-end p-6`}
         >
           <div
-            className="absolute inset-0 bg-no-repeat bg-cover bg-center transition-transform duration-500 ease-in-out lg:group-hover:scale-110"
+            className="absolute inset-0 bg-no-repeat bg-cover bg-top transition-transform duration-500 ease-in-out lg:group-hover:scale-110"
             style={{ backgroundImage: `url(${data.picture})` }}
           ></div>
 

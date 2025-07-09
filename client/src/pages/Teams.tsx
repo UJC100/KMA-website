@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Title from "../component/Title";
 import { demoData } from "../component/demoData";
 import TeamCard from "../component/teams-page-component/teamCard";
@@ -7,7 +7,9 @@ import TeamCard from "../component/teams-page-component/teamCard";
 
 const Teams = () => {
     const [teamsData, setTeamsData] = useState(demoData);
-
+useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
 
   return (
        <div className="px-6 md:px-16 lg:px-24 xl:px-32 bg-amber-50/10">
