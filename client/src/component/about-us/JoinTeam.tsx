@@ -9,7 +9,7 @@ const JoinTeam = () => {
   return (
         
         <div className="relative w-full py-24 my-10 bg-white overflow-hidden h-screen flex justify-center items-center">
-      {/* Image Collage */}
+      {/* Image Collages */}
       <div className="absolute top-14 md:top-7 left-0 md:w-90 z-0 w-40 h-44 md:h-70">
         <img src={assets.aboutUsPhoto4} alt="Team" className="w-full h-full object-cover shadow-lg" />
       </div>
