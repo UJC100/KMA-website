@@ -19,7 +19,7 @@ useEffect(() => {
         </div>
 
 
-        <div >
+        <div className="pb-5 md:pb-10">
             
             <TeamCard teamsData={teamsData}/>
         </div>

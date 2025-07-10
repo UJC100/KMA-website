@@ -1,12 +1,11 @@
-import React from 'react';
 import AnimateOnScroll from '../AnimationOnScroll';
 import { assets } from '../../assets/assets';
 import { ArrowLongRightIcon } from '@heroicons/react/24/outline';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const JoinTeam = () => {
-  const navigate = useNavigate()
+  
   return (
         
         <div className="relative w-full py-24 my-10 bg-white overflow-hidden h-screen flex justify-center items-center">
@@ -44,7 +43,7 @@ const JoinTeam = () => {
         <p className="font-light text-lg mb-6">
           At Away, you’ll find suitcases, bags, and accessories built with thoughtful details to make each and every journey more seamless.
         </p>
-        <button  onClick={() => navigate("/join-team")} className='flex items-center justify-center gap-2 text-xl font-medium cursor-pointer  group'>JOIN OUR TEAM <ArrowLongRightIcon className=' group-hover:translate-x-1 transition-all w-7 h-7 ' /></button>
+        <Link  to={'/join-team'} className='flex items-center justify-center gap-2 text-xl font-medium cursor-pointer  group'>JOIN OUR TEAM <ArrowLongRightIcon className=' group-hover:translate-x-1 transition-all w-7 h-7 ' /></Link>
         
     
     </AnimateOnScroll>

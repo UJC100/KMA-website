@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { demoData } from "../component/demoData";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
 import TabNavigation from "../component/mentors-page-components/TabNavigation";
@@ -18,7 +18,7 @@ const MentorsPage = () => {
   window.scrollTo(0, 0);
 }, []);
 
-  if (!mentor) return <div>Mentor Not Found</div>;
+  if (!mentor) return <Navigate to="/page-not-found" />;
 
 
   return (
@@ -41,7 +41,7 @@ const MentorsPage = () => {
             <img
               src={mentor.picture}
               alt="Profile"
-              className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-white shadow-lg object-cover"
+              className="w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-white shadow-lg object-cover object-top"
             />
           </div>
           <div className="mb-4 flex flex-col items-center md:items-start">

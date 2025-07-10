@@ -3,7 +3,7 @@ import Title from "./Title";
 import { assets } from "../assets/assets";
 import { CheckCircleIcon, UserGroupIcon, CalendarDateRangeIcon, ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import AnimateOnScroll from "./AnimationOnScroll";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const PersonalizedSection = () => {
   const navigate = useNavigate()
@@ -24,7 +24,7 @@ const PersonalizedSection = () => {
         <p className="flex items-center text-sm font-light text-gray-600/90 gap-4"><CalendarDateRangeIcon className='h-6 w-6 text-green-500'/> Flexible scheduling fits even the busiest calendars.</p>
         <p className="flex items-center text-sm font-light text-gray-600/90 gap-4"> <UserGroupIcon className='h-6 w-6 text-green-500'/> Join a supportive community focused on mutual growth and success.</p>
         </div>
-        <button onClick={() => navigate('/team')} className='flex items-center justify-center gap-2 text-xl font-normal cursor-pointer mt-4 mb-5 group transition-colors duration-200 '>Explore Mentors <ArrowLongRightIcon className=' group-hover:translate-x-1 transition-all mt-1 w-6 h-6' /></button>
+        <Link to={'/team'} className='flex items-center justify-center gap-2 text-xl font-normal cursor-pointer mt-4 mb-5 group transition-colors duration-200 '>Explore Mentors <ArrowLongRightIcon className=' group-hover:translate-x-1 transition-all mt-1 w-6 h-6' /></Link>
       </AnimateOnScroll>
 
     <div className="overflow-hidden">

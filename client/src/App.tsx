@@ -9,11 +9,12 @@ import { useState } from 'react'
 import JoinTeam from './pages/JoinTeam'
 import MentorsPage from './pages/MentorsPage'
 import Teams from './pages/Teams'
+import NotFound from './component/NotFound'
 
 
 
 function App() {
-  const noLayoutPaths = ['/join-team', '/payment', '/success'];
+  const noLayoutPaths = ['/join-team', '/payment', '/success', '/page-not-found'];
   const isOwnerPath = useLocation().pathname.startsWith('owner')
   const hideLayout = isOwnerPath || noLayoutPaths.includes(location.pathname);
 
@@ -34,6 +35,7 @@ function App() {
           <Route path='/join-team' element={<JoinTeam/>}/>
           <Route path='/mentor/:id' element={<MentorsPage/>}/>
           <Route path='/team' element={<Teams/>}/>
+          <Route path="/page-not-found" element={<NotFound />} />
         </Routes>
       </div>
       <Contact isOpen={showModal} onClose={handleClose}/>

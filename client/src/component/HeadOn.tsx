@@ -1,7 +1,7 @@
-import React from 'react';
 import Title from './Title';
 import { CheckIcon } from '@heroicons/react/24/outline';
 import AnimateOnScroll from './AnimationOnScroll';
+import { Link } from 'react-router-dom';
 
 
 const HeadOn = () => {
@@ -41,7 +41,9 @@ const HeadOn = () => {
         <AnimateOnScroll direction='down' distance={60} delay={0.4} className='text-center md:text-start text-sm md:text-[17px] text-gray-600/90 mt-2 max-w-174'>And the best part? It won’t cost you a monthly subscription to join us.</AnimateOnScroll>
 
 
-          <AnimateOnScroll direction='down' distance={60} delay={0.1} className=' text-sm font-medium cursor-pointer mt-4 mb-5 py-2 px-6 rounded-[5px] bg-gradient-to-l from-yellow-400 via-yellow-500 to-yellow-600 hover:text-blue-950 transition-colors duration-200 text-gray-600 shadow-xl'>Find Your Mentor Today</AnimateOnScroll>
+          <Link to={'/team'}>
+          <AnimateOnScroll direction='down' distance={60} delay={0.1} className=' text-sm font-medium cursor-pointer mt-4 mb-5 py-2 px-6 rounded-[5px] bg-gradient-to-l from-yellow-400 via-yellow-500 to-yellow-600 hover:text-blue-950 transition-colors duration-200 text-gray-600 shadow-xl' >Find Your Mentor Today</AnimateOnScroll>
+          </Link>
     </div>
   );
 };

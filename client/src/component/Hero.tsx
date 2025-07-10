@@ -2,14 +2,13 @@ import React from "react";
 import { assets } from "../assets/assets";
 import AnimateOnScroll from "./AnimationOnScroll";
 import { TypeAnimation } from "react-type-animation";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 {
   /* <span className='border font-playfair bg-black/60 p-2 rounded-2xl text-amber-400'>Potential</span> */
 }
 
 const Hero = () => {
-  const navigate = useNavigate()
 
   return (
     <div className=" text-white bg-black/70 bg-blend-overlay bg-[url('/src/assets/premium-photo.jpeg')]  bg-no-repeat bg-cover bg-center ">
@@ -47,14 +46,14 @@ const Hero = () => {
           Connect 1:1 with industry leaders for personalized guidance and career
           acceleration.
         </p>
-        <button onClick={() => navigate("/join-team")} className="flex items-center gap-2 text-2xl font-medium cursor-pointer mt-4 mb-5 group border rounded-full p-4 hover:bg-black/60 hover:text-amber-400 hover:border-black transition-colors duration-200">
+        <Link to={'/join-team'} className="flex items-center gap-2 text-2xl font-medium cursor-pointer mt-4 mb-5 group border rounded-full p-4 hover:bg-black/60 hover:text-amber-400 hover:border-black transition-colors duration-200">
           Join Our Team{" "}
           <img
             src={assets.arrowIcon}
             alt="arrow-icon"
             className="invert group-hover:translate-x-1 transition-all mt-1"
           />
-        </button>
+        </Link>
       </AnimateOnScroll>
     </div>
   );
