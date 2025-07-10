@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { demoData } from "../component/demoData";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
@@ -23,7 +23,7 @@ const MentorsPage = () => {
 
   return (
     <div className="relative w-full h-min-screen flex flex-col pt-30 px-6 md:px-16 lg:px-24 xl:px-32 bg-gradient-to-b from-[#eff0ee]-100 to-[#f7f7f7] overflow-hidden">
-        <div className="  ">
+        <div>
       {/* Blurred profile background */}
       <img
         src={mentor.picture}

@@ -1,6 +1,6 @@
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-import React from "react";
 import { FaFacebook, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 type Person = {
   picture?: string;
@@ -14,11 +14,16 @@ type CardProps = {
 };
 
 const TeamCard = ({ teamsData }: CardProps) => {
+  const navigate = useNavigate()
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
       {teamsData.map((data, i) => (
         <div
           key={i}
+          onClick={() =>
+               navigate(`/mentor/${i}`) 
+            }
           className={`group relative w-full h-[450px] overflow-hidden shadow-lg cursor-pointer mt-7 flex flex-col justify-end p-6`}
         >
           <div
