@@ -64,6 +64,12 @@ import teamMember8 from "./nestergrapher-nedie-bWxV-L9K6u4-unsplash.webp"
 import astronaut from "./506b575739e90613428cdb399175e2c8-space-astronaut-cartoon.webp"
 import notFoundBg from "./notfoundbg_LE_upscale_balanced_x4.jpg"
 
+import eventImg1 from "./al-elmes-ULHxWq8reao-unsplash.webp"
+
+import eventImg2 from "./andrea-mininni-VLlkOJdzLG0-unsplash.webp"
+
+import eventImg3 from "./md-duran-rE9vgD_TXgM-unsplash.webp"
+
 
 
  
@@ -125,7 +131,10 @@ export const assets = {
     teamMember7,
     teamMember8,
     astronaut,
-    notFoundBg
+    notFoundBg,
+    eventImg1,
+    eventImg2,
+    eventImg3
 }
 
 export const cities = [

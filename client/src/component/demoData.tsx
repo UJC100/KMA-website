@@ -237,3 +237,21 @@ export const availableTimes = [
   "04:30 PM",
   "05:00 PM",
 ];
+
+export const events = [
+  {
+    date: '12 Dec, 2025',
+    title: 'KMA Gala Night',
+    image: assets.eventImg1,
+  },
+  {
+    date: '6 Nov, 2025',
+    title: 'Modern fashion webinar with Brandon Rogers',
+    image: assets.eventImg2,
+  },
+  {
+    date: '15 Dec, 2025',
+    title: 'Online conference with Donna Stroupe',
+    image: assets.eventImg3,
+  },
+];

@@ -18,7 +18,7 @@ const MentorsPage = () => {
   window.scrollTo(0, 0);
 }, []);
 
-  if (!mentor) return <Navigate to="/page-not-found" />;
+  if (!mentor) return <Navigate to="/*" />;
 
 
   return (

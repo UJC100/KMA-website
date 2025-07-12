@@ -10,6 +10,7 @@ import JoinTeam from './pages/JoinTeam'
 import MentorsPage from './pages/MentorsPage'
 import Teams from './pages/Teams'
 import NotFound from './component/NotFound'
+import Events from './pages/Events'
 
 
 
@@ -35,7 +36,8 @@ function App() {
           <Route path='/join-team' element={<JoinTeam/>}/>
           <Route path='/mentor/:id' element={<MentorsPage/>}/>
           <Route path='/team' element={<Teams/>}/>
-          <Route path="/*" element={<NotFound />} />
+          <Route path='/events' element={<Events/>}/>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Contact isOpen={showModal} onClose={handleClose}/>
