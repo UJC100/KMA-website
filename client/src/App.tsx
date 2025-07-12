@@ -35,7 +35,7 @@ function App() {
           <Route path='/join-team' element={<JoinTeam/>}/>
           <Route path='/mentor/:id' element={<MentorsPage/>}/>
           <Route path='/team' element={<Teams/>}/>
-          <Route path="/page-not-found" element={<NotFound />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
       <Contact isOpen={showModal} onClose={handleClose}/>
