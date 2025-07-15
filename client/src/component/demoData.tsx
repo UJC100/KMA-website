@@ -243,15 +243,21 @@ export const events = [
     date: '12 Dec, 2025',
     title: 'KMA Gala Night',
     image: assets.eventImg1,
+    isPaid: true,
+    location: 'Taguig Event Center, Taguig, Manila'
   },
   {
     date: '6 Nov, 2025',
     title: 'Modern fashion webinar with Brandon Rogers',
     image: assets.eventImg2,
+    isPaid: true,
+     location: 'Makati Event Center, Makati, Manila'
   },
   {
     date: '15 Dec, 2025',
-    title: 'Online conference with Donna Stroupe',
+    title: 'Online conference with MP',
     image: assets.eventImg3,
+    isPaid: false,
+     location: 'Pasig Event Center, Pasig, Manila'
   },
 ];

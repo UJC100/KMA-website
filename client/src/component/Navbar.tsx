@@ -17,7 +17,7 @@ const Navbar = ({onContactClick}: NavbarProps) => {
     { name: "About", path: "/about" },
     { name: "Bookshelf", path: "/books" },
     { name: "Contact", path: "/contact" },
-    { name: "Event", path: "/event" },
+    { name: "Event", path: "/events" },
   ];
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -67,9 +67,9 @@ const Navbar = ({onContactClick}: NavbarProps) => {
             }
         };
 
-          return <a
+          return <Link
             key={i}
-            href={link.path}
+            to={link.path}
             onClick={link.name === "Contact" ? handleClick: undefined}
             className={`group flex flex-col gap-0.5 ${
               isScrolled ? "text-gray-700" : "text-white"
@@ -81,7 +81,7 @@ const Navbar = ({onContactClick}: NavbarProps) => {
                 isScrolled ? "bg-gray-700" : "bg-white"
               } h-0.5 w-0 group-hover:w-full transition-all duration-300`}
             />
-          </a>
+          </Link>
         }
         )}
         {user?.publicMetadata?.role === "admin" && (
