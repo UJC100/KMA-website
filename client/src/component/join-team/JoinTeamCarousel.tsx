@@ -85,10 +85,10 @@ const JoinTeamCarousel = ({ mentorsData, limit }: CarouselProps) => {
             <img
               src={img.picture}
               alt={img.occupation}
-              className="bg-slate-400 rounded-full object-cover w-[50px] h-[50px]"
+              className="bg-slate-400 rounded-full object-cover object-top w-[50px] h-[50px]"
             />
             <div className="flex flex-col justify-center gap-1">
-              <p className="font-light text-gray-400 my-3 md:my-7 text-[12px] md:text-lg">
+              <p className="font-light text-gray-400 my-3 md:my-7 mr-2 text-[12px] md:text-lg">
                 &quot;{img.speech}&quot;
               </p>
               <h1 className="text-gray-300 font-semibold text-[15px] md:text-lg">{img.name}</h1>
