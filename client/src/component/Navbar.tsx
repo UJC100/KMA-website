@@ -72,7 +72,7 @@ const Navbar = ({onContactClick}: NavbarProps) => {
             to={link.path}
             onClick={link.name === "Contact" ? handleClick: undefined}
             className={`group flex flex-col gap-0.5 ${
-              isScrolled ? "text-gray-700" : "text-white"
+              isScrolled ? "text-gray-700" : "text-gray-700"
             }`}
           >
             {link.name}
