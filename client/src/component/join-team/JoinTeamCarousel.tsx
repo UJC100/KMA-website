@@ -64,7 +64,7 @@ const JoinTeamCarousel = ({ mentorsData, limit }: CarouselProps) => {
   }
 
   if (errorMessage !== null) {
-    return <div>Error Occured ! {errorMessage}</div>;
+    return <div>Error Occured ! {errorMessage}</div>
   }
 
   
