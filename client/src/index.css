@@ -7,7 +7,60 @@
 @theme {
   --color-primary: #2563EB;
   --color-secondary: #FBBF24;
+  --animate-floatOne: floatOne 45s ease-in-out infinite;
+  --animate-floatTwo: floatTwo 60s ease-in-out infinite;
+  --animate-floatThree: floatThree 30s ease-in-out infinite;
+
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100% {
+      transform: rotate(-3deg);
+    }
+    50% {
+      transform: rotate(3deg);
+    }
+  }
+
+  @keyframes floatOne {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(300px, -100px);
+  }
+  50% {
+    transform: translate(-100px, 200px);
+  }
+  75% {
+    transform: translate(200px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
+
+  @keyframes floatTwo {
+    0%, 100% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-400px) translateX(200px);
+  }
+}
+  @keyframes floatThree {
+  0%, 
+  100% {
+    transform: translateX(0);
+  }
+  
+  50% {
+    transform: translateX(600px);
+  }
+ 
+}
+}
+
 
 * {
   font-family: Outfit;
