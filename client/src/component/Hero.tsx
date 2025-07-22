@@ -17,7 +17,7 @@ const Hero = () => {
   <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 rounded-full blur-3xl opacity-60 animate-floatOne"></div>
   <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-gradient-to-tr from-yellow-400 via-yellow-500 to-yellow-600 rounded-full blur-3xl opacity-60 animate-floatTwo"></div>
 
-  <div className="absolute bottom-[-200px] left-[-100px] w-[500px] h-[500px] bg-gradient-to-tr from-yellow-400 via-yellow-500 to-yellow-600 rounded-full blur-3xl opacity-60 animate-floatThree"></div>
+  <div className="absolute bottom-[-200px] left-[-100px] w-[500px] h-[500px] bg-gradient-to-tr from-yellow-400 via-yellow-500 to-yellow-600 rounded-full blur-3xl opacity-60 animate-floatThree "></div>
 
   {/* Glassmorphism container */}
   <div className="relative z-10 w-full h-[90%] flex justify-between items-center ">
