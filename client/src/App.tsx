@@ -11,6 +11,7 @@ import MentorsPage from './pages/MentorsPage'
 import Teams from './pages/Teams'
 import NotFound from './component/NotFound'
 import Events from './pages/Events'
+import Reservation from './pages/Reservation'
 
 
 
@@ -36,7 +37,11 @@ function App() {
           <Route path='/join-team' element={<JoinTeam/>}/>
           <Route path='/mentor/:id' element={<MentorsPage/>}/>
           <Route path='/team' element={<Teams/>}/>
+
           <Route path='/events' element={<Events/>}/>
+        
+          <Route path="/reservation/:eventId" element={<Reservation />} />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

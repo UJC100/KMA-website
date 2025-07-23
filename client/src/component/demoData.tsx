@@ -233,24 +233,30 @@ export const availableTimes = [
 
 export const events = [
   {
+    id: 1,
     date: '12 Dec, 2025',
     title: 'KMA Gala Night',
     image: assets.eventImg1,
     isPaid: true,
-    location: 'Taguig Event Center, Taguig, Manila'
+    location: 'Taguig Event Center, Taguig, Manila',
+    price: 100000
   },
   {
+    id: 2,
     date: '6 Nov, 2025',
     title: 'Modern fashion webinar with Brandon Rogers',
     image: assets.eventImg2,
     isPaid: true,
-     location: 'Makati Event Center, Makati, Manila'
+     location: 'Makati Event Center, Makati, Manila',
+    price: 100000
   },
   {
+    id: 3,
     date: '15 Dec, 2025',
     title: 'Online conference with MP',
     image: assets.eventImg3,
     isPaid: false,
-     location: 'Pasig Event Center, Pasig, Manila'
+     location: 'Pasig Event Center, Pasig, Manila',
+     price: 0
   },
 ];
