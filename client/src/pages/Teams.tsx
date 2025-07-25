@@ -23,6 +23,7 @@ useEffect(() => {
             
             <TeamCard teamsData={teamsData}/>
         </div>
+        
        </div>
     );
 };
