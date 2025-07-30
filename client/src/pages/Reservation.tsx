@@ -3,11 +3,14 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { events } from "../component/demoData";
 import { MapPinIcon } from "@heroicons/react/24/solid";
+import { useAuth } from "@clerk/clerk-react";
+
 
 
 
 const Reservation = () => {
     const { eventId } = useParams();
+    const {getToken} = useAuth()
 
   const event = events.find((eventData) => {
     const eventIdSting = eventData.id.toString()
@@ -31,6 +34,7 @@ const Reservation = () => {
     const totalAmount = (TICKET_PRICE * quantity)/ 100;
 
     try {
+      const token = getToken()
       const res = await axios.post("http://localhost:3000/reservations", {
         name,
         email,
@@ -38,7 +42,14 @@ const Reservation = () => {
         amount: totalAmount,
         eventId: eventId
         // pass the computed total to backend
-      });
+      },
+      {
+        headers:{
+          Authorization:`Bearer ${token}`
+        }
+
+      }
+    );
       
       const { paymentLink } = res.data;
           
