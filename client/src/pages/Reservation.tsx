@@ -3,14 +3,13 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { events } from "../component/demoData";
 import { MapPinIcon } from "@heroicons/react/24/solid";
-import { useAuth } from "@clerk/clerk-react";
 
 
 
 
 const Reservation = () => {
     const { eventId } = useParams();
-    const {getToken} = useAuth()
+
 
   const event = events.find((eventData) => {
     const eventIdSting = eventData.id.toString()
@@ -34,8 +33,7 @@ const Reservation = () => {
     const totalAmount = (TICKET_PRICE * quantity)/ 100;
 
     try {
-      const token = getToken()
-      const res = await axios.post("http://localhost:3000/reservations", {
+      const res = await axios.post("http://localhost:3000/api/v1/reservations", {
         name,
         email,
         quantity,
@@ -44,21 +42,14 @@ const Reservation = () => {
         // pass the computed total to backend
       },
       {
-        headers:{
-          Authorization:`Bearer ${token}`
-        }
-
+        headers: {
+          "Content-Type": "application/json",
+        },
       }
     );
+    console.log(res.data);
+      alert("Reservation successful!");
       
-      const { paymentLink } = res.data;
-          
-
-    if (paymentLink && paymentLink.startsWith("http")) {
-      window.location.href = paymentLink;
-    } else {
-      throw new Error("Invalid payment link");
-    }
     } catch (err) {
       console.error(err);
       alert("Something went wrong!");

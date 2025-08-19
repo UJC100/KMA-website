@@ -31,7 +31,7 @@ const Hero = () => {
       <p className="bg-amber-500/50 text-amber-950 px-3.5 py-1 rounded-full mt-20">
         The Ultimate Coaching Experience.
       </p>
-      <h1 className="font-playfair text-2xl md:text-[85px] md:font-bold max-w-[45rem] mt-4">
+      <h1 className="font-playfair text-2xl text-black md:text-[85px] md:font-bold max-w-[45rem] mt-4">
         Unlock Your{" "}
       </h1>
       <span className="rounded-2xl border bg-black px-2 pt-2 pb-3 mb-6 text-2xl md:text-[70px] md:font-extrabold">
@@ -61,10 +61,6 @@ const Hero = () => {
       <h1 className="font-playfair text-3xl md:text-[40px] md:font-extrabold max-w-[45rem]">
         Expert Mentors Await.
       </h1>
-      <p className="md:max-w-130 text-center md:text-start mt-2 text-sm md:text-base w-[90%]">
-        Connect 1:1 with industry leaders for personalized guidance and career
-        acceleration.
-      </p>
       <Link
         to={"/join-team"}
         className="flex items-center gap-2 text-2xl font-medium cursor-pointer mt-4 mb-5 group rounded-full p-4 bg-black text-amber-400 hover:border-black transition-colors duration-200"
@@ -88,7 +84,7 @@ const Hero = () => {
         <img
           src={assets.teamMember1}
           alt=""
-          className="w-[100px] h-[200px] rounded-[50px] object-cover cursor-pointer mb-2 brightness-50 hover:brightness-100 transition duration-500"
+          className="w-[100px] h-[200px] rounded-[50px] object-cover cursor-pointer mb-2"
         />
       </div>
 
@@ -96,7 +92,7 @@ const Hero = () => {
         <img
           src={assets.teamMember2}
           alt=""
-          className="w-[100px] h-[200px] rounded-[50px] object-cover cursor-pointer mb-2 brightness-50 hover:brightness-100 transition duration-500"
+          className="w-[100px] h-[200px] rounded-[50px] object-cover cursor-pointer mb-2 "
         />
         <div
           className="w-[100px] h-[200px] rounded-[50px] mb-2"
@@ -109,12 +105,12 @@ const Hero = () => {
         <img
           src={assets.teamMember3}
           alt=""
-          className="w-[100px] h-[200px] rounded-[50px] object-cover cursor-pointer mb-2 brightness-50 hover:brightness-100 transition duration-500"
+          className="w-[100px] h-[200px] rounded-[50px] object-cover cursor-pointer mb-2"
         />
         <img
           src={assets.teamMember4}
           alt=""
-          className="w-[100px] h-[200px] rounded-[50px] object-cover cursor-pointer mb-2 brightness-50 hover:brightness-100 transition duration-500"
+          className="w-[100px] h-[200px] rounded-[50px] object-cover cursor-pointer mb-2"
         />
       </div>
 
@@ -122,7 +118,7 @@ const Hero = () => {
         <img
           src={assets.teamMember5}
           alt=""
-          className="w-[100px] h-[200px] rounded-[50px] object-cover cursor-pointer mb-2 brightness-50 hover:brightness-100 transition duration-500"
+          className="w-[100px] h-[200px] rounded-[50px] object-cover cursor-pointer mb-2 "
         />
         <div
           className="w-[100px] h-[200px] rounded-[50px] mb-2"
@@ -134,7 +130,7 @@ const Hero = () => {
         <img
           src={assets.teamMember6}
           alt=""
-          className="w-[100px] h-[200px] rounded-[50px] object-cover cursor-pointer mb-2 brightness-50 hover:brightness-100 transition duration-500"
+          className="w-[100px] h-[200px] rounded-[50px] object-cover cursor-pointer mb-2"
         />
       </div>
     </div>

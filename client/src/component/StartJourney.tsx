@@ -1,4 +1,3 @@
-import React from 'react';
 import Title from './Title';
 import { startJourneyCardData } from './demoData';
 import AnimateOnScroll from './AnimationOnScroll';

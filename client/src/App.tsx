@@ -49,6 +49,7 @@ function App() {
 
 
           <Route path='/my-account' element={<LoggedInUserLayout />} >
+          <Route index element={<Dashboard />} /> 
             <Route path="dashboard" element={<Dashboard />} />
           </Route>
         </Routes>
