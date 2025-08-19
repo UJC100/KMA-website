@@ -12,8 +12,8 @@ import Teams from './pages/Teams'
 import NotFound from './component/NotFound'
 import Events from './pages/Events'
 import Reservation from './pages/Reservation'
-import Dashboard from './pages/logged-in-user/dashboard'
-import LoggedInUserLayout from './pages/logged-in-user/LoggedInUserLayout'
+import Dashboard from './pages/logged-in-user-account/dashboard'
+import LoggedInUserLayout from './pages/logged-in-user-account/LoggedInUserLayout'
 
 
 
