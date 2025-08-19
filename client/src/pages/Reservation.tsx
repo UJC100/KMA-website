@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { events } from "../component/demoData";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 
@@ -9,7 +9,7 @@ import { MapPinIcon } from "@heroicons/react/24/solid";
 
 const Reservation = () => {
     const { eventId } = useParams();
-
+    const navigate = useNavigate();
 
   const event = events.find((eventData) => {
     const eventIdSting = eventData.id.toString()
@@ -35,6 +35,9 @@ const Reservation = () => {
     try {
       const res = await axios.post("http://localhost:3000/api/v1/reservations", {
         name,
+        eventName: event.title,
+        location: event.location,
+        date: event.date,
         email,
         quantity,
         amount: totalAmount,
@@ -48,6 +51,10 @@ const Reservation = () => {
       }
     );
     console.log(res.data);
+    navigate(`/payment/${res.data._id}`, {
+      state: {
+        amount: totalAmount,
+      }})
       alert("Reservation successful!");
       
     } catch (err) {

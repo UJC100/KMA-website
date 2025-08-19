@@ -70,6 +70,10 @@ import eventImg2 from "./andrea-mininni-VLlkOJdzLG0-unsplash.webp"
 
 import eventImg3 from "./md-duran-rE9vgD_TXgM-unsplash.webp"
 
+import GCashLogo from "./64px-GCash_logo.svg.png"
+import BDOLogo from "./BDO_Unibank_(logo).svg.png"
+import makePaymentBg from "./vecteezy_elegant-white-overlap-shade-background-with-line-golden_6852733.jpg"
+import creditcard from "./credit-card-icon-credit-and-debit-card-icon-for-digital-payment-vu8sme0s_t.jpg"
 
 
  
@@ -134,7 +138,11 @@ export const assets = {
     notFoundBg,
     eventImg1,
     eventImg2,
-    eventImg3
+    eventImg3,
+    BDOLogo,
+    GCashLogo,
+    makePaymentBg,
+    creditcard
 }
 
 export const cities = [

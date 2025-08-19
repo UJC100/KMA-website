@@ -14,6 +14,7 @@ import Events from './pages/Events'
 import Reservation from './pages/Reservation'
 import Dashboard from './pages/logged-in-user-account/dashboard'
 import LoggedInUserLayout from './pages/logged-in-user-account/LoggedInUserLayout'
+import MakePayments from './pages/MakePayments'
 
 
 
@@ -44,6 +45,8 @@ function App() {
           <Route path='/events' element={<Events/>}/>
         
           <Route path="/reservation/:eventId" element={<Reservation />} />
+
+          <Route path="/payment/:paymentId" element={<MakePayments />} />
 
           <Route path="*" element={<NotFound />} />
 
