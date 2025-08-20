@@ -72,8 +72,9 @@ import eventImg3 from "./md-duran-rE9vgD_TXgM-unsplash.webp"
 
 import GCashLogo from "./64px-GCash_logo.svg.png"
 import BDOLogo from "./BDO_Unibank_(logo).svg.png"
+import BpiLogo from "./bpi-logo-brandlogos.net_55rv03izx.svg"
 import makePaymentBg from "./vecteezy_elegant-white-overlap-shade-background-with-line-golden_6852733.jpg"
-import creditcard from "./credit-card-icon-credit-and-debit-card-icon-for-digital-payment-vu8sme0s_t.jpg"
+import creditcard from "./Credit Card Security Flat.jpg"
 
 
  
@@ -141,6 +142,7 @@ export const assets = {
     eventImg3,
     BDOLogo,
     GCashLogo,
+    BpiLogo,
     makePaymentBg,
     creditcard
 }
