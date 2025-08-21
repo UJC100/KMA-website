@@ -5,7 +5,7 @@ import AnimateOnScroll from '../AnimationOnScroll';
 const Hero = () => {
   return (
     <div
-     className=" text-white bg-zinc-800/50 bg-blend-overlay bg-[url('/src/assets/secondbgphoto.jpeg')]  bg-no-repeat bg-cover bg-center ">
+     className=" text-white bg-zinc-800/50 bg-blend-overlay bg-[url('/src/assets/Group-photo3.webp')]  bg-no-repeat bg-cover bg-center ">
         <AnimateOnScroll
          direction="zoom"
         scaleLevel={0.7}

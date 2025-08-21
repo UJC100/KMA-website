@@ -39,9 +39,9 @@ const JoinTeam = () => {
      <AnimateOnScroll 
          direction="zoom"
         scaleLevel={0.7}  className="relative z-10 flex flex-col items-center justify-center text-center px-4 max-w-2xl mx-auto">
-        <h2 className="text-4xl md:text-6xl font-light mb-4">Our team</h2>
+        <h2 className="text-4xl md:text-6xl font-light mb-4">Let’s walk this journey together</h2>
         <p className="font-light text-lg mb-6">
-          At Away, you’ll find suitcases, bags, and accessories built with thoughtful details to make each and every journey more seamless.
+          Connect with us today and take the next step toward fulfilling your assignment on Earth. Whether you’re looking for mentorship, community, or partnership opportunities, we’re here to support you.
         </p>
         <Link  to={'/join-team'} className='flex items-center justify-center gap-2 text-xl font-medium cursor-pointer  group'>JOIN OUR TEAM <ArrowLongRightIcon className=' group-hover:translate-x-1 transition-all w-7 h-7 ' /></Link>
         

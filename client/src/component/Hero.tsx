@@ -92,12 +92,12 @@ const Hero = () => {
   </div> */}
 
   {/* CENTER IMAGE */}
-  <div className="relative">
+  <div className="relative ">
     <img src={assets.teamMember1} className="object-cover w-36 h-[600px] rounded-md" />
     <div className="absolute inset-0 bg-black/10"></div>
   </div>
   <div className="mt-20 relative">
-    <img src={assets.teamMember3} className="object-cover w-36 h-[600px] rounded-md " />
+    <img src={assets.teamMember4} className="object-cover w-36 h-[600px] rounded-md " />
       <div className="absolute inset-0 bg-black/10"></div>
   </div>
   <div className="relative">
@@ -105,7 +105,7 @@ const Hero = () => {
     <div className="absolute inset-0 bg-black/10"></div>
   </div>
   <div className="mt-20 relative">
-    <img src={assets.teamMember4} className="object-cover w-36 h-[600px] rounded-md" />
+    <img src={assets.teamMember3} className="object-cover w-36 h-[600px] rounded-md" />
     <div className="absolute inset-0 bg-black/10"></div>
   </div>
   

@@ -41,15 +41,16 @@ import totalRevenueIcon from "./totalRevenueIcon.svg";
 import fearOfPublic from "./fear-of-speaking.webp"
 import imposterSyndrome from "./imposter-syndrome.jpg"
 import remoteWork from "./remote-work.jpg"
-import aboutUsPhoto1 from "./ali-mkumbwa-v_rp3XooOl0-unsplash.jpg"
-import aboutUsPhoto2 from "./kc-shum-XQ5NaoBUUkM-unsplash.jpg"
-import aboutUsPhoto3 from "./angela-bailey-GfUk_pFtjz0-unsplash.jpg"
-import aboutUsPhoto4 from "./abdullah-ali-_bIyIshKuY8-unsplash.jpg"
-import aboutUsPhoto5 from "./aj-alao-yViyrYmnYvE-unsplash.jpg"
-import aboutUsPhoto6 from "./daniel-adesina-F7OY2Qd5v44-unsplash.jpg"
-import aboutUsPhoto7 from "./francis-odeyemi-AszfTJfly_U-unsplash.jpg"
-import aboutUsPhoto9 from "./WhatsApp Image 2025-06-23 at 18.04.02 (2).jpeg"
-import aboutUsPhoto8 from "./troy-wade-dYgyzxlHJ58-unsplash.jpg"
+import aboutUsPhoto1 from "./Group-photo5.webp"
+import aboutUsPhoto10 from "./Group-photo4.webp"
+import aboutUsPhoto2 from "./Group-photo2.webp"
+import aboutUsPhoto3 from "./Group-photo6.webp"
+import aboutUsPhoto4 from "./Group-photo7.webp"
+import aboutUsPhoto5 from "./Group-photo8.webp"
+import aboutUsPhoto6 from "./Group-photo11.webp"
+import aboutUsPhoto7 from "./Group-photo9.webp"
+import aboutUsPhoto9 from "./Group-photo12.webp"
+import aboutUsPhoto8 from "./Group-photo10.webp"
 import contact from "./patrick-tomasso-fMntI8HAAB8-unsplash.jpg"
 import JoinTeamBG from "./blurred-bokeh-light-dark-blue-background_219144-488-2.avif"
 import teamMember1 from "./MP.jpeg"
@@ -125,6 +126,7 @@ export const assets = {
     aboutUsPhoto7,
     aboutUsPhoto8,
     aboutUsPhoto9,
+    aboutUsPhoto10,
     contact,
     JoinTeamBG,
     teamMember1,
