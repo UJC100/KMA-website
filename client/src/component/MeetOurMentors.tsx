@@ -7,7 +7,7 @@ import { demoData } from './demoData';
 
 const MeetOurMentors = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32  gap-3 py-20 bg-slate-50">
+    <div className="flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32  gap-3 py-20 bg-[#f6f4f0]">
        <AnimateOnScroll direction='down' distance={60}>
       <Title
         title="Meet Some of Our Inspiring Mentors"

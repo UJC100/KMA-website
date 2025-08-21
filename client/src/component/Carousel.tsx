@@ -79,7 +79,7 @@ const Carousel = ({ images, limit }: CarouselProps) => {
   };
 
   return (
-    <div className=" relative  h-[650px] md:h-full flex justify-center items-center overflow-hidden">
+    <div className=" relative  h-[650px] md:h-full flex justify-center items-center overflow-hidden ">
       {/* Arrows */}
       <ChevronLeftIcon
         onClick={handlePrev}
@@ -95,7 +95,7 @@ const Carousel = ({ images, limit }: CarouselProps) => {
       />
 
       {/* Slides */}
-      <div className=" relative w-[90%] md:w-2/3 h-full flex justify-center items-center">
+      <div className=" relative w-[90%] md:w-2/3 h-full flex justify-center items-center ">
         {imagesArr.map((img, i) => (
           <div
             key={i}
@@ -104,7 +104,7 @@ const Carousel = ({ images, limit }: CarouselProps) => {
             }
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className={`absolute w-full h-[550px] md:h-[350px]  rounded-sm overflow-hidden shadow-2xl transition-all duration-800 ease-in-out transform flex flex-col md:flex-row justify-center items-center  px-7 py-5 gap-5 ${getPositionClasses(
+            className={`absolute w-full h-[550px] md:h-[350px]  rounded-sm overflow-hidden shadow-2xl transition-all duration-800 ease-in-out transform flex flex-col md:flex-row justify-center items-center  px-7 py-5 gap-5 bg-white ${getPositionClasses(
               i
             )}`}
           >

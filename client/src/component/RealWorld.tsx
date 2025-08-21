@@ -6,7 +6,7 @@ import AnimateOnScroll from "./AnimationOnScroll";
 
 const RealWorld = () => {
   return (
-    <div className=" flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32  gap-3 pt-20 pb-30 bg-slate-50">
+    <div className=" flex flex-col items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32  gap-3 pt-20 pb-30 bg-[#f6f4f0]">
         <AnimateOnScroll direction="down" distance={60}>
       <Title
         title="Explore Real-World Challenges"
