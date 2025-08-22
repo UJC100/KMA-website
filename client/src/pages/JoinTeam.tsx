@@ -2,11 +2,13 @@ import { assets } from "../assets/assets";
 import JoinTeamCarousel from "../component/join-team/JoinTeamCarousel";
 import { demoData } from "../component/demoData";
 import Form from "../component/Form";
+import YouTubePopup from "../component/join-team/PopupVideo";
 
 const JoinTeam = () => {
  
   return (
     <div className="bg-[#f6f4f0] flex  flex-col md:flex-row h-full gap-3 md:gap-0 md:p-5">
+      <YouTubePopup />
        <div className="w-full md:w-1/2 ">
         <img src={assets.logo} className="w-30 h-30 m-auto md:m-0" alt="logo" />
 

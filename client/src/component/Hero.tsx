@@ -97,7 +97,7 @@ const Hero = () => {
     <div className="absolute inset-0 bg-black/10"></div>
   </div>
   <div className="mt-20 relative">
-    <img src={assets.teamMember4} className="object-cover w-36 h-[600px] rounded-md " />
+    <img src={assets.teamMember4} className="object-cover object- w-36 h-[600px] rounded-md " />
       <div className="absolute inset-0 bg-black/10"></div>
   </div>
   <div className="relative">
