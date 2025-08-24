@@ -17,6 +17,8 @@ import {
   FormLabel,
 } from "@mui/material";
 import { amber } from "@mui/material/colors";
+import Calendar from "react-calendar";
+import "react-calendar/dist/Calendar.css";
 
 const steps = [
   "Personal Info",
@@ -25,6 +27,7 @@ const steps = [
   "Commitment",
   "Vision",
   "Agreement",
+  "Schedule meeting",
 ];
 
 export default function MentorshipForm() {
@@ -49,6 +52,8 @@ export default function MentorshipForm() {
     commitment3: "",
     vision: "",
     agreement: "",
+    meetingDate: "",
+    meetingTime: "",
   });
 
   const [errors, setErrors] = useState<any>({}); // <-- error state
@@ -66,11 +71,12 @@ export default function MentorshipForm() {
     3: ["commitment1", "commitment2", "commitment3"],
     4: ["vision"],
     5: ["agreement"],
+    6: ["meetingDate", "meetingTime"],
   };
 
   const validateStep = (step: number) => {
     const fields = requiredFields[step];
-  const newErrors: Record<string, string> = {};
+    const newErrors: Record<string, string> = {};
     fields.forEach((field) => {
       if (!formData[field]) {
         newErrors[field] = "This field is required";
@@ -91,7 +97,14 @@ export default function MentorshipForm() {
   };
 
   const handleSubmit = () => {
-    if (validateStep(activeStep)) {
+    let allValid = true;
+    for (let step = 0; step < steps.length; step++) {
+      if (!validateStep(step)) {
+        allValid = false;
+      }
+    }
+
+    if (allValid) {
       alert("Form submitted: " + JSON.stringify(formData, null, 2));
     }
   };
@@ -102,6 +115,7 @@ export default function MentorshipForm() {
   const isStepComplete = requiredFields[activeStep].every(
     (field) => formData[field]?.trim() !== ""
   );
+  console.log(activeStep, steps.length);
 
   return (
     <Box className="max-w-3xl mx-auto p-4 sm:p-6 bg-white shadow-lg rounded-2xl m-2">
@@ -365,7 +379,7 @@ export default function MentorshipForm() {
         {activeStep === 5 && (
           <FormControl
             component="fieldset"
-             error={!formData.agreement && Boolean(errors.agreement)}// error state
+            error={!formData.agreement && Boolean(errors.agreement)} // error state
           >
             <FormLabel component="legend">Do you agree?</FormLabel>
 
@@ -391,6 +405,65 @@ export default function MentorshipForm() {
               <FormHelperText>{errors.agreement}</FormHelperText>
             )}
           </FormControl>
+        )}
+        {/* SCHEDULE MEETING */}
+        {activeStep === 6 && (
+          <div className="flex flex-col gap-4">
+            {/* Date Picker */}
+            <div>
+              <label className="block mb-1 text-sm font-medium text-gray-700">
+                Pick a Date
+              </label>
+              <Calendar
+                onClickDay={(date: Date) =>
+                  setFormData((prev: any) => ({
+                    ...prev,
+                    meetingDate: date.toLocaleDateString("en-CA"),
+                  }))
+                }
+                value={
+                  formData.meetingDate
+                    ? new Date(formData.meetingDate)
+                    : undefined
+                }
+                minDate={(() => {
+                  const tomorrow = new Date();
+                  tomorrow.setDate(tomorrow.getDate() + 1); 
+                  return tomorrow;
+                })()}
+              />
+              {!formData.meetingDate && (
+                <p className="text-red-500 text-sm mt-1">Date is required</p>
+              )}
+            </div>
+
+            {/* Time Selector */}
+            <div>
+              <label className="block mb-1 text-sm font-medium text-gray-700">
+                Pick a Time
+              </label>
+              <select
+                name="meetingTime"
+                value={formData.meetingTime}
+                onChange={(e) =>
+                  setFormData((prev: any) => ({
+                    ...prev,
+                    meetingTime: e.target.value,
+                  }))
+                }
+                className="w-full border border-gray-300 px-4 py-2 rounded-md text-black/70"
+              >
+                <option value="">-- Select a time --</option>
+                <option>9:00 AM</option>
+                <option>11:00 AM</option>
+                <option>2:00 PM</option>
+                <option>4:00 PM</option>
+              </select>
+              {!formData.meetingTime && (
+                <p className="text-red-500 text-sm mt-1">Time is required</p>
+              )}
+            </div>
+          </div>
         )}
       </Box>
 
