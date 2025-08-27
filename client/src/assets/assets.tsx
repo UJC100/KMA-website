@@ -54,13 +54,19 @@ import aboutUsPhoto8 from "./Group-photo10.webp"
 import contact from "./patrick-tomasso-fMntI8HAAB8-unsplash.jpg"
 import JoinTeamBG from "./blurred-bokeh-light-dark-blue-background_219144-488-2.avif"
 import teamMember1 from "./MP.jpeg"
-import teamMember2 from "./coach-hosanna.webp"
-import teamMember3 from "./coach-antonio.jpeg"
-import teamMember4 from "./Prophet.jpeg"
-import teamMember5 from "./Prophet.jpeg"
-import teamMember6 from "./kasongo-bulobo-F1HxT0K96aU-unsplash.webp"
-import teamMember7 from "./maria-fernanda-pissioli-p9N2EnY2V-0-unsplash.webp"
+import teamMember2 from "./Prophet.jpeg"
+import teamMember3 from "./coach-hosanna.webp"
+import teamMember4 from "./coach-antonio.jpeg"
+import teamMember5 from "./treasure.webp"
+import teamMember6 from "./nissi.webp"
+import teamMember7 from "./theo.webp"
 import teamMember8 from "./Group-photo13.webp"
+import teamMember9 from "./lucious.webp"
+import teamMember10 from "./glorified.webp"
+import teamMember11 from "./mercy.webp"
+import teamMember12 from "./ruby.webp"
+import teamMember13 from "./leandry.webp"
+import teamMember14 from "./chima.webp"
 
 import astronaut from "./506b575739e90613428cdb399175e2c8-space-astronaut-cartoon.webp"
 import notFoundBg from "./notfoundbg_LE_upscale_balanced_x4.jpg"
@@ -137,6 +143,12 @@ export const assets = {
     teamMember6,
     teamMember7,
     teamMember8,
+    teamMember9,
+    teamMember10,
+    teamMember11,
+    teamMember12,
+    teamMember13,
+    teamMember14,
     astronaut,
     notFoundBg,
     eventImg1,

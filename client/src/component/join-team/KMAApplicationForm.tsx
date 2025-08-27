@@ -19,6 +19,7 @@ import {
 import { amber } from "@mui/material/colors";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import axios from "axios";
 
 const steps = [
   "Personal Info",
@@ -96,18 +97,55 @@ export default function MentorshipForm() {
     if (activeStep > 0) setActiveStep(activeStep - 1);
   };
 
-  const handleSubmit = () => {
-    let allValid = true;
-    for (let step = 0; step < steps.length; step++) {
-      if (!validateStep(step)) {
-        allValid = false;
-      }
-    }
+ const handleSubmit = async () => {
+  let allValid = true;
 
-    if (allValid) {
-      alert("Form submitted: " + JSON.stringify(formData, null, 2));
+  for (let step = 0; step < steps.length; step++) {
+    if (!validateStep(step)) {
+      allValid = false;
     }
+  }
+
+  if (!allValid) return;
+
+    const payload = {
+    fullName: formData.fullName,
+    age: formData.age,
+    email: formData.email,
+    phone: formData.phone,
+    occupation: formData.occupation,
+    motivations: [formData.motivation1, formData.motivation2, formData.motivation3].filter(Boolean),
+    challenges: [formData.challenges1, formData.challenges2, formData.challenges3].filter(Boolean),
+    commitments: [formData.commitment1, formData.commitment2, formData.commitment3].filter(Boolean),
+    vision: formData.vision,
+    agreement: formData.agreement === "yes" ? true : false,
+    meetingDate: formData.meetingDate,
+    meetingTime: formData.meetingTime,
   };
+
+  try {
+  
+    const response = await axios.post(
+      "http://localhost:3000/api/v1/meetings", 
+      payload,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    console.log("✅ Submission successful:", response.data);
+    alert("Form submitted successfully!");
+    
+    // Optionally reset the form
+    // setFormData(initialFormData);
+
+  } catch (error: any) {
+    console.error("❌ Submission failed:", error.response || error.message);
+    alert("Form submission failed. Please try again.");
+  }
+};
 
   const progress = ((activeStep + 1) / steps.length) * 100;
 
@@ -224,7 +262,7 @@ export default function MentorshipForm() {
               onChange={handleChange}
               error={!!errors.email}
               helperText={errors.email}
-              
+
             />
             <TextField
               fullWidth
@@ -390,12 +428,12 @@ export default function MentorshipForm() {
               onChange={handleChange}
             >
               <FormControlLabel
-                value="Yes"
+                value="yes"
                 control={<Radio />}
                 label="✅ Yes, I commit fully."
               />
               <FormControlLabel
-                value="No"
+                value="no"
                 control={<Radio />}
                 label="❌ No, I can’t commit."
               />

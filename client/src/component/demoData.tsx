@@ -62,7 +62,49 @@ export const demoData = [
     country: "France",
     occupation: "Art Director",
     speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
-  }
+  },
+  {
+    picture: assets.teamMember9,
+    name: "Sophia Dubois",
+    country: "France",
+    occupation: "Art Director",
+    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+  },
+  {
+    picture: assets.teamMember10,
+    name: "Sophia Dubois",
+    country: "France",
+    occupation: "Art Director",
+    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+  },
+  {
+    picture: assets.teamMember11,
+    name: "Sophia Dubois",
+    country: "France",
+    occupation: "Art Director",
+    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+  },
+  {
+    picture: assets.teamMember12,
+    name: "Sophia Dubois",
+    country: "France",
+    occupation: "Art Director",
+    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+  },
+  {
+    picture: assets.teamMember13,
+    name: "Sophia Dubois",
+    country: "France",
+    occupation: "Art Director",
+    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+  },
+  {
+    picture: assets.teamMember14,
+    name: "Sophia Dubois",
+    country: "France",
+    occupation: "Art Director",
+    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+  },
 ];
 
 

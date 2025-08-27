@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Title from "../component/Title";
 import { demoData } from "../component/demoData";
-import TeamCard from "../component/teams-page-component/teamCard";
+import TeamCard from "../component/teams-page-component/TeamCard";
 
 
 
