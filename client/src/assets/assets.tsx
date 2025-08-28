@@ -60,13 +60,14 @@ import teamMember4 from "./coach-antonio.jpeg"
 import teamMember5 from "./treasure.webp"
 import teamMember6 from "./nissi.webp"
 import teamMember7 from "./theo.webp"
-import teamMember8 from "./Group-photo13.webp"
+import teamMember8 from "./dhalia.webp"
 import teamMember9 from "./lucious.webp"
 import teamMember10 from "./glorified.webp"
 import teamMember11 from "./mercy.webp"
 import teamMember12 from "./ruby.webp"
 import teamMember13 from "./leandry.webp"
 import teamMember14 from "./chima.webp"
+import teamMember15 from "./elijah.webp"
 
 import astronaut from "./506b575739e90613428cdb399175e2c8-space-astronaut-cartoon.webp"
 import notFoundBg from "./notfoundbg_LE_upscale_balanced_x4.jpg"
@@ -149,6 +150,7 @@ export const assets = {
     teamMember12,
     teamMember13,
     teamMember14,
+    teamMember15,
     astronaut,
     notFoundBg,
     eventImg1,

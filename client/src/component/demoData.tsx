@@ -23,10 +23,12 @@ export const demoData = [
   },
   {
     picture: assets.teamMember3,
-    name: "Noah Kim",
-    country: "South Korea",
-    occupation: "Data Scientist",
-    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+    name: "Fanchette Njeumi",
+    country: "Cameroon",
+    occupation: "Communication Specialist | Bilingual Trainer | Social Media Marketer",
+    profile: "Bilingual Tech Support Analyst Previously Trainer, Social Media Manager, freelance Translator ",
+    speech: "Commonly known as Hosannah Bright, I identify as a Disciple and a Lover-in-Chief. Everything about me revolves around honoring God and making disciples. That is why I believe I have a mountain of Influence to conquer in order to establish God’s agenda in the world and be a blessing to my generation.",
+    speech2: "Commonly known as Hosannah Bright, I identify as a Disciple and a Lover-in-Chief. Everything about me revolves around honoring God and making disciples. That is why I believe I have a mountain of Influence to conquer in order to establish God’s agenda in the world and be a blessing to my generation. It started many years ago when to survive as a university student I used to teach French and English to teenagers in my community and High Schools in my neighbourhood. Being a Sunday School instructor has helped me fashion teachings according to the audience and grow in public speaking.  I had the Aprivilege to volunteer in Cameroon during some conferences with themes related to  women empowerment. I am a trained journalist. I had the opportunity to carry out investigations as a student in the University of Buea. On one of the videos featured on my YouTube Channel, I interviewed a young man who nearly got scammed by a Network Marketing company. I look at life as a journey. And in this journey, I love to capture people’s experiences and turn them into inspiring stories. Destiny is greater than death. Live as if you only had today to make impact and leave a legacy."
   },
   {
     picture:assets.teamMember4,
@@ -37,24 +39,30 @@ export const demoData = [
   },
   {
     picture: assets.teamMember5,
-    name: "Ethan Smith",
-    country: "Australia",
-    occupation: "Digital Marketer",
-    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+    name: "Liku Ojong Treasure Labi",
+    country: "Cameroon",
+    occupation: "ADMINISTRATOR | CHEF | EVENT CATERER | MONEY TRANSFER SERVICE PROVIDER",
+    profile: "I am a servant-leader at heart, passionate about administration, entrepreneurship, and building solutions that touch lives across cultures and nations.",
+    speech: "To serve people is to write a story of impact with your life, every act of service is a line, every solution is a chapter, and every life touched is a legacy.",
+    speech2: "My life is built on one principle: service. As an administrator, I serve by bringing order, structure, and leadership where it is needed. As a caterer and baker, I serve by creating experiences that bring people together in joy. Through my money transfer business, I serve by keeping families and communities connected across Cameroon and the Philippines. And as an entrepreneur, I serve by turning ideas into solutions that make life easier and brighter for others. What ties all of this together is not just the variety of roles I play, but the single passion that fuels them, my love for people. I believe that true greatness is found in service, and that no matter what field you are in, when you commit to serving others with passion and excellence, you will always leave a mark. My message is simple: Embrace all that you are, use your gifts to serve, and you will create a legacy of impact. If I can do it, so can you."
   },
   {
     picture: assets.teamMember6,
-    name: "Mia Chen",
-    country: "Taiwan",
-    occupation: "Product Manager",
-    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+    name: "NISSI",
+    country: "Cameroon",
+    occupation: "ARTS AND ENTERTAINMENT MOGUL",
+    profile: "A natural born writer and this gift is the foundation on which I built myself to thrive in diverse creative scenes",
+    speech: "I believe in the importance of mental health and human psychology. This theme is exceedingly lacking in the African community, because it is seen as something Western. My strategy is to incorporate it into our culture in a way that is relatable to all, and bring healing to strong, yet broken nations",
+    speech2: "There are 2 messages I am most passionate about in life, and you will see this consistency in everything I create. I believe in the importance of mental health and human psychology. This theme is exceedingly lacking in the African community, because it is seen as something Western. My strategy is to incorporate it into our culture in a way that is relatable to all, and bring healing to strong, yet broken nations I also believe in the power of embracing every single part of who you are. You don’t need to choose just one expression of yourself to show the world. Through the multiple talents and skills God has blessed me with, I will inspire hundreds of people around the world to be unapologetically themselves in a wholesome and powerful way that creates impact and establishes legacy. YOU CAN SUCCEED BY BEING YOU! IF I CAN DO IT, SO CAN YOU!"
   },
   {
     picture: assets.teamMember7,
-    name: "Lucas Müller",
-    country: "Germany",
-    occupation: "Mechanical Engineer",
-    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+    name: "Theophile-Didier M",
+    country: "Cameroon",
+    occupation: "Civil engineer | Bassist | Crypto trader | Gamer",
+    profile: "Creating aesthetic arts through my imagination for structural and music layouts",
+    speech: "With encouragement from my mentors Music through the help of God built my confidence to face my fears in both professional and social spheres of life , today  I also earn from it.",
+    speech2: "Growing up I had so much going on around me that I lost the right words to express myself ,thanks to some events I grew closer to music .Sounds formed from  my notes and grooves are expressions of my emotions be it passed or present  .With encouragement from my mentors Music through the help of God built my confidence to face my fears in both professional and social spheres of life , today  I also earn from it . If u Need a guitar tutor even as a novice i’m ur guy ."
   },
   {
     picture: assets.teamMember8,
@@ -86,13 +94,24 @@ export const demoData = [
   },
   {
     picture: assets.teamMember12,
-    name: "Sophia Dubois",
-    country: "France",
-    occupation: "Art Director",
-    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+    name: "Rubby Akubuiro",
+    country: "Nigeria",
+    occupation: "Social Media Manager | Graphic Designer | Fashion Designer | Content Creator",
+    profile: "I live to design, create, and inspire, because life itself is art.",
+    speech: "There is one truth I live by: creativity is not a hobby, it is life itself. It flows through every expression of who I am, whether I’m managing a brand on social media, designing graphics, creating fashion pieces, or producing content that speaks to the soul.",
+    speech2: "There is one truth I live by: creativity is not a hobby, it is life itself. It flows through every expression of who I am, whether I’m managing a brand on social media, designing graphics, creating fashion pieces, or producing content that speaks to the soul. I believe that life is too vast to be confined to one box. You don’t have to choose between your gifts; you can embrace them all and use them as tools to shape the world. Each skill, when aligned with vision, becomes a voice that speaks to hearts, builds influence, and leaves impact. My journey is a testimony that you can succeed by embracing all of who you are. If I can do it, balancing fashion, media, and design while building a brand of influence, then so can you.✨ YOU CAN DO IT ALL. YOU CAN HAVE IT ALL. AND YOU CAN MAKE IT COUNT."
   },
   {
     picture: assets.teamMember13,
+    name: "Leandry Malon Pewo Wette",
+    country: "Cameroon",
+    occupation: "Air conditioning and refrigeration technician/  French Bilingual Technical Support Agent / certified SAFe Scrum Master",
+    profile: "Même si la vie peut ressembler à une impasse , parfois un nouveau chemin apparaît quand on s'y attend le moins. Le chemin est long mais il est rempli d'espoir ",
+    speech: "Il paraît que certains choses ne peuvent pas êtres réparées. L'âme d'un enfant qu'on as brisée en mille morceaux,  par exemple.  Mais c'est un mensonge. Quand on sais ce qui est cassée,  on trouve le moyen de le reparer",
+    speech2: "Life will challenge you. It will knock you down , test your strength  , and make you question  your path. But here's the truth : every step forward-no matter how small- is progress. You don't need to have it figured out .You just need the courage to take the next step. Growth doesn't come from staying comfortable-it comes from showing up, even when it's hard.You've made it through difficult moments before . You're stronger than you think, braver than you believe , and more capable than you know. So get up . Breath.  And move forward. Your future is still unwritten-and you hold the pen."
+  },
+  {
+    picture: assets.teamMember15,
     name: "Sophia Dubois",
     country: "France",
     occupation: "Art Director",
@@ -100,9 +119,10 @@ export const demoData = [
   },
   {
     picture: assets.teamMember14,
-    name: "Sophia Dubois",
-    country: "France",
-    occupation: "Art Director",
+    name: "John Chima Uche",
+    country: "Nigeria",
+    occupation: "Software Developer",
+    profile: "What I have has the potential to change the world. Likewise you",
     speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
   },
 ];

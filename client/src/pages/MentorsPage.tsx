@@ -80,7 +80,7 @@ const MentorsPage = () => {
     </div>
 
     <div className="relative z-10 ">
-        <TabNavigation/>
+        <TabNavigation speech={mentor.speech2 ?? ""}/>
     </div>
     </div>
     

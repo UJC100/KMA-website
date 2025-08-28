@@ -8,6 +8,7 @@ type Person = {
   country?: string;
   occupation?: string;
   speech?: string;
+  profile?: string;
 };
 type CardProps = {
   teamsData: Person[];
@@ -44,8 +45,7 @@ const TeamCard = ({ teamsData }: CardProps) => {
             </h1>
             <h2 className="font-semibold">{data.occupation} </h2>
             <p className="text-sm mt-1">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum,
-              exercitationem!
+             {data.profile}
             </p>
             <div className="flex space-x-2 text-xl mt-5 items-center opacity-70">
               <span>

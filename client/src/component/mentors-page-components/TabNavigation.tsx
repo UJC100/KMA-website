@@ -3,7 +3,11 @@ import React, { useState } from "react";
 import {  FaCheckCircle } from "react-icons/fa";
 import Form from "../Form";
 
-const TabNavigation = () => {
+interface UserSpeech {
+speech: string
+}
+
+const TabNavigation = ({speech}: UserSpeech ) => {
   const [activeTab, setActiveTab] = useState("profile");
 
   return (
@@ -34,23 +38,7 @@ const TabNavigation = () => {
         {activeTab === "profile" && (
           <div className="grid md:grid-cols-[60%_40%] md:space-x-7 space-y-7">
             <p className="rounded-xl bg-white shadow-lg self-start p-8 text-sm md:text-lg  font-light text-gray-800 leading-relaxed">
-              Hi - After studying Sociology and Business Economics I started my
-              career in the field of pharmaceutical market research in a leading
-              international agency (GfK). During this time I have developed
-              expertise in both qualitative and quantitative methodologies, with
-              a main focus on large-scale quantitative studies and advanced
-              analytics. I have experience in various therapeutic areas,
-              including oncology, diabetes, CNS and auto-immune diseases. My
-              background also inccludes client-side experience working as Market
-              Research Consultant for Eli Lilly. In my previous role at
-              technology start-up symanto, we applied machine learning and
-              artificial intelligence for natural language processing. We
-              focused on utilizing new technologies to innovate understanding of
-              consumers on the basis of already existing data, e.g. social media
-              and CRM data bases. I am Design Sprint facilitator and in my
-              current role leverage and evolve our global physician platform for
-              business insights. I would be happy to chat if anything of the
-              above could be of help.
+              {speech}
             </p>
             <div className="flex items-center gap-4 border border-green-500 bg-green-100/40 rounded-xl p-4 self-start">
                 <FaCheckCircle className="text-green-700 h-6 w-6"/>
