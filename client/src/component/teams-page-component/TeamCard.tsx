@@ -47,7 +47,7 @@ const TeamCard = ({ teamsData }: CardProps) => {
             <p className="text-sm mt-1">
              {data.profile}
             </p>
-            <div className="flex space-x-2 text-xl mt-5 items-center opacity-70">
+            {/* <div className="flex space-x-2 text-xl mt-5 items-center opacity-70">
               <span>
                 <FaLinkedin />
               </span>
@@ -57,7 +57,7 @@ const TeamCard = ({ teamsData }: CardProps) => {
               <span>
                 <FaTwitter />
               </span>
-            </div>
+            </div> */}
           </div>
         </div>
       ))}

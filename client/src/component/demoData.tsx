@@ -9,10 +9,12 @@ import { assets } from "../assets/assets";
 export const demoData = [
   {
     picture: assets.teamMember1,
-    name: "Liam Johnson",
-    country: "Canada",
-    occupation: "Software Engineer",
-    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+    name: "Virginia Nahkun",
+    country: "Cameroon",
+    occupation: "Product project manager | Skill monitization Coach | Digital Marketing Mentor | Speaker | Host of Finding Balance with MP",
+    profile: "I am mandated to establish financial freedom through skills and empower parents to establish a legacy for their kids",
+    speech: "My hunger to get answers grew into a confusion of knowledge, ambition and waste of time. Until I understood that for every product there is a manufacturer who has carefully writing down a Manual to facilite the functioning of that product",
+    speech2: "Graduate of French bilingual letters from the University of Yaounde 1.Accounting graduate from Citic Yaounde. Learning service specialist from Telus international Philippines. PSI 2 Agile Coach and Project manager From Myriduis Philippines. Skill monitization Coach from  Social media experts from Roxanne training. Digital Marketing Mentor trained. I could feel it through my ideas that I was born for more than what my environment could offer. I started asking questions. Who I am I ? Why I am I here ? Where I am I going to? Where I am I coming from? My hunger to get answers grew into a confusion of knowledge, ambition and waste of time. Until I understood that for every product there is a manufacturer who has carefully writing down a Manuel to facilited the functioning of that product. Genesis gave me answers I am a child of God. God is my Creator, my autor , my foundation, I am here on earth to fulfill an assignment as an embassador, our mandate is to live on earth as it is in heaven by fulfilling our purpose. I promised myself I will reach out to all the nations to create the awareness that we were created for dominion through our gifts to establish the kingdom of heaven here on earth."
   },
   {
     picture: assets.teamMember2,
@@ -73,17 +75,21 @@ export const demoData = [
   },
   {
     picture: assets.teamMember9,
-    name: "Sophia Dubois",
-    country: "France",
-    occupation: "Art Director",
-    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+    name: "Lucius Afuhmbom",
+    country: "Cameroon",
+    occupation: "Sports | Drummer | Time management advicer",
+    profile: "God has blessed me with strength like that of Samsung and I want to use it for his glory only",
+    speech: "If you put in the work and discipline nothing will be impossible for you to achieve",
+    speech2: "God has blessed me with strength like that of Samsung and I want to use it for his glory only"
   },
   {
     picture: assets.teamMember10,
-    name: "Sophia Dubois",
-    country: "France",
-    occupation: "Art Director",
-    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+    name: "Glorified Kidio",
+    country: "Cameroon",
+    occupation: "Robotics | Designer | Cooking | Singer",
+    profile: "I love helping people and making them find happiness in what they do",
+    speech: "I love helping people and making them find happiness in what they do",
+    speech2: "You are smart, you are kind , you are important"
   },
   {
     picture: assets.teamMember11,

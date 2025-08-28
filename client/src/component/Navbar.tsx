@@ -40,6 +40,13 @@ const Navbar = ({onContactClick}: NavbarProps) => {
     };
   }, []);
 
+       const handleClick = (e, linkName) => {
+            if (linkName === "Contact") {
+            e.preventDefault();
+            onContactClick();
+            }
+        };
+
   return (
     <nav
       className={`fixed h-14 md:h-24 top-0 left-0  w-full flex items-center justify-between px-4 md:px-16 lg:px-24 xl:px-32 transition-all duration-500 z-50 ${
@@ -59,18 +66,12 @@ const Navbar = ({onContactClick}: NavbarProps) => {
 
       {/* Desktop Nav */}
       <div className="hidden md:flex items-center gap-4 lg:gap-8">
-        {navLinks.map((link, i) => {
-             const handleClick = (e) => {
-            if (link.name === "Contact") {
-            e.preventDefault();
-            onContactClick();
-            }
-        };
+        {navLinks.map((link) => {
 
           return <Link
-            key={i}
+            key={link.name}
             to={link.path}
-            onClick={link.name === "Contact" ? handleClick: undefined}
+            onClick={link.name === "Contact" ? (e => handleClick(e, link.name)) : undefined}
             className={`group flex flex-col gap-0.5 ${
               isScrolled ? "text-gray-700" : "text-gray-700"
             }`}
@@ -136,7 +137,7 @@ const Navbar = ({onContactClick}: NavbarProps) => {
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           src={assets.menuIcon}
           alt=""
-          className={`${isScrolled && "invert"} h-4`}
+          className={`invert h-4`}
         />
       </div>
 
@@ -153,11 +154,23 @@ const Navbar = ({onContactClick}: NavbarProps) => {
           <img src={assets.closeIcon} alt="close menu" className="h-6.5" />
         </button>
 
-        {navLinks.map((link, i) => (
-          <a key={i} href={link.path} onClick={() => setIsMenuOpen(false)}>
-            {link.name}
-          </a>
-        ))}
+         
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.path}
+                onClick={e => {
+                  if (link.name === "Contact") {
+                    handleClick(e, link.name); // This will call onContactClick and prevent default
+                    setIsMenuOpen(false);
+                  } else {
+                    setIsMenuOpen(false);
+                  }
+                }}
+              >
+                {link.name}
+              </Link>
+            ))}
 
         {user && (
           <button
