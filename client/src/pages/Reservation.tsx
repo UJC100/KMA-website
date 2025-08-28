@@ -68,7 +68,7 @@ const Reservation = () => {
   return (
 
     <div className="bg-[#f6f4f0] flex  flex-col md:flex-row h-screen gap-3 md:gap-0 md:p-5 md:pt-24">
-       <div className="w-full md:w-1/2 flex item-center ">
+       <div className="w-full md:w-1/2 flex item-center pt-20 ">
 
             <form
       onSubmit={handleSubmit}

@@ -1,4 +1,3 @@
-import React from "react";
 import Hero from "../component/about-us/Hero";
 import PhotoText from "../component/about-us/PhotoText";
 import { assets } from "../assets/assets";

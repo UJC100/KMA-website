@@ -101,7 +101,7 @@ const Events = () => {
                 </p>
                 {event.isPaid && (
                   <Link
-                    to={""}
+                    to={`/reservation/${eventId}`}
                     className="text-xl text-black font-playfair font-bold bg-white border rounded-md shadow-[0_6px_0_0_rgba(0,0,0,0.8)]
                   hover:scale-105 
                   hover:shadow-[0_4px_0_0_rgba(0,0,0,0.8)] 

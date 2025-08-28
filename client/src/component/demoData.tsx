@@ -34,10 +34,12 @@ export const demoData = [
   },
   {
     picture:assets.teamMember4,
-    name: "Isabella Rossi",
-    country: "Italy",
-    occupation: "Photographer",
-    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+    name: "Antoine Ledoux",
+    country: "Cameroon",
+    occupation: "Telecommunications and Network engineer | Cloud support technician | Pastor | Life coach",
+    profile: " I'm keen to help others discover and activate the riches that God has already placed within them",
+    speech: "I define myself first and foremost as a child of God, passionate about the person of Christ and the work He is doing in people's lives. I currently work as a Cloud Tech Support Analyst, a role that allows me to combine technical rigour and service. Aware of my identity in Christ, I'm keen to help others discover and activate the riches that God has already placed within them. My commitment goes beyond technology: I am deeply invested in the spiritual, mental and emotional development of those around me.",
+    speech2: "Since I was a child, I've grown up alongside my older sister, who suffers from mental health problems. I saw my parents do everything they could to help her, often without any tangible result. This silent suffering, combined with a deep sense of powerlessness, awakened in me a burning desire to understand God and His ability to restore lives. It was this quest that led me to commit myself fully to a mission: to raise awareness of the importance of mental, psychic and spiritual well-being. For me, coachingis much more than a tool: it's a calling. It enables me to accompany people towards a life that is free, fulfilled and centred on their true identity. Today, my greatest battle is to participate in the inner restoration of individuals so that they can experience the peace, healing and true joy that only God can offer."
   },
   {
     picture: assets.teamMember5,
@@ -68,10 +70,12 @@ export const demoData = [
   },
   {
     picture: assets.teamMember8,
-    name: "Sophia Dubois",
-    country: "France",
-    occupation: "Art Director",
-    speech: "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!"
+    name: "Dhalia Kenne Mafeuwo",
+    country: "Cameroon",
+    occupation: "Chef | Baker | Professional Hairdresser",
+    profile: "Cooking is an act of joy and love, a way to share and turn every dish into a unique experience.",
+    speech: "Passionate about cooking, I consider the culinary art as a sacred moment, far beyond the simple act of preparing food. It is a true expression of creativity through colors, tastes, flavors, and textures. For me, cooking is an act of joy and love, a way to share and turn every dish into a unique experience.",
+    speech2: "Discovering the Kingdom has been a wonderful, special, and deeply rewarding experience. Walking in it is a true joy for me, and I have learned two very important lessons: Identity and Excellence with Consistency. Identity :is discovering the real you your gifts, talents, and the potential the Father placed within you. This frees you from stress, comparison, and fear. Excellence and consistency mean doing even the little things you know well with love, joy, diligence, and perfection. Above all, remain consistent. Together, these principles guide us to live with purpose and strength."
   },
   {
     picture: assets.teamMember9,
