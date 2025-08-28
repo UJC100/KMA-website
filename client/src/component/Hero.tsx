@@ -1,4 +1,3 @@
-import React from "react";
 import { assets } from "../assets/assets";
 import AnimateOnScroll from "./AnimationOnScroll";
 import { TypeAnimation } from "react-type-animation";

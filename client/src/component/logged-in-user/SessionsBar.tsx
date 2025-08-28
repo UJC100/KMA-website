@@ -1,4 +1,3 @@
-import React from 'react';
 import { assets } from '../../assets/assets';
 import { BookOpenIcon, CalendarDateRangeIcon, ChatBubbleBottomCenterTextIcon, ClockIcon } from '@heroicons/react/24/outline';
 

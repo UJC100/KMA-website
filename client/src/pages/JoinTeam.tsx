@@ -1,7 +1,6 @@
 import { assets } from "../assets/assets";
 import JoinTeamCarousel from "../component/join-team/JoinTeamCarousel";
 import { demoData } from "../component/demoData";
-import Form from "../component/Form";
 import YouTubePopup from "../component/join-team/PopupVideo";
 import KMAApplicationForm from "../component/join-team/KMAApplicationForm";
 

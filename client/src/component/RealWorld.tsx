@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "./Title";
 import { articlesData } from "./demoData";
 import { ArrowLongRightIcon } from "@heroicons/react/24/outline";

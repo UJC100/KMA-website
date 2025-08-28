@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 
 
@@ -12,13 +12,12 @@ type Person = {
 };
 type CarouselProps = {
   mentorsData: Person[];
-  limit?: number;
 };
 
-const JoinTeamCarousel = ({ mentorsData, limit }: CarouselProps) => {
+const JoinTeamCarousel = ({ mentorsData }: CarouselProps) => {
   const [mentorsDataArr, setMentorsData] = useState<Person[]>([]);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [errorMessage, setErrorMessage] = useState(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -38,8 +37,12 @@ const JoinTeamCarousel = ({ mentorsData, limit }: CarouselProps) => {
         setLoading(true);
         setMentorsData(mentorsData);
         setLoading(false);
-      } catch (error: any) {
-        setErrorMessage(error.message);
+      } catch (error: unknown) {
+        if (error instanceof Error) {
+          setErrorMessage(error.message);
+        } else {
+          setErrorMessage("An unknown error occurred.");
+        }
         setLoading(false);
       }
     }

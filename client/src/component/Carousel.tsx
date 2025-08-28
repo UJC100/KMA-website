@@ -1,5 +1,5 @@
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
@@ -15,12 +15,12 @@ type CarouselProps = {
   limit: number;
 };
 
-const Carousel = ({ images, limit }: CarouselProps) => {
+const Carousel = ({ images}: CarouselProps) => {
   const navigate = useNavigate();
 
   const [imagesArr, setImagesArr] = useState<Person[]>([]);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [errorMessage, setErrorMessage] = useState(null);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -38,10 +38,14 @@ const Carousel = ({ images, limit }: CarouselProps) => {
         setLoading(true);
         setImagesArr(images);
         setLoading(false);
-      } catch (error: any) {
+      } catch (error: unknown) {
+      if (error instanceof Error) {
         setErrorMessage(error.message);
-        setLoading(false);
+      } else {
+        setErrorMessage("An unknown error occurred.");
       }
+      setLoading(false);
+    }
     }
   }, [images]);
 
@@ -67,7 +71,7 @@ const Carousel = ({ images, limit }: CarouselProps) => {
     return <div>Error Occured ! {errorMessage}</div>;
   }
 
-  const getPositionClasses = (index) => {
+  const getPositionClasses = (index: number) => {
     const isCenter = index === currentSlide;
     const isLeft = index === (currentSlide - 1 + images.length) % images.length;
     const isRight = index === (currentSlide + 1) % images.length;

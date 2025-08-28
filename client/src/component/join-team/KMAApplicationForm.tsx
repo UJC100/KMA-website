@@ -32,6 +32,7 @@ const steps = [
 ];
 
 export default function MentorshipForm() {
+  const apiUrl = import.meta.env.VITE_BASE_API_URL
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("md"));
 
@@ -126,7 +127,7 @@ export default function MentorshipForm() {
   try {
   
     const response = await axios.post(
-      "http://localhost:3000/api/v1/meetings", 
+      `${apiUrl}/meetings`, 
       payload,
       {
         headers: {

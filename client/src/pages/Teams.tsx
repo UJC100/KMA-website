@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Title from "../component/Title";
 import { demoData } from "../component/demoData";
 import TeamCard from "../component/teams-page-component/TeamCard";
@@ -6,7 +6,6 @@ import TeamCard from "../component/teams-page-component/TeamCard";
 
 
 const Teams = () => {
-    const [teamsData, setTeamsData] = useState(demoData);
 useEffect(() => {
   window.scrollTo(0, 0);
 }, []);
@@ -21,7 +20,7 @@ useEffect(() => {
 
         <div className="pb-5 md:pb-10">
             
-            <TeamCard teamsData={teamsData}/>
+            <TeamCard teamsData={demoData}/>
         </div>
         
        </div>

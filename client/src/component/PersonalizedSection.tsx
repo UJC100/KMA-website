@@ -1,12 +1,10 @@
-import React from "react";
 import Title from "./Title";
 import { assets } from "../assets/assets";
 import { CheckCircleIcon, UserGroupIcon, CalendarDateRangeIcon, ArrowLongRightIcon } from '@heroicons/react/24/outline';
 import AnimateOnScroll from "./AnimationOnScroll";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, } from "react-router-dom";
 
 const PersonalizedSection = () => {
-  const navigate = useNavigate()
   return (
     <div className="flex flex-col md:flex-row items-center justify-center px-6 md:px-16 lg:px-24 xl:px-32  gap-2 py-20  ">
       <AnimateOnScroll direction="right" distance={-100} delay={0.6} className="flex flex-col justify-center items-start">

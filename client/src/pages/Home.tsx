@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Hero from '../component/Hero';
 import PersonalizedSection from '../component/PersonalizedSection';
 import HeadOn from '../component/HeadOn';
@@ -13,6 +13,7 @@ import axios from 'axios'
 
 
 const Home = () => {
+  const apiUrl = import.meta.env.VITE_BASE_API_URL
   const { user } = useUser();
   const { getToken } = useAuth();
 
@@ -21,7 +22,7 @@ const Home = () => {
       try {
         const token = await getToken();
 
-        await axios.get('http://localhost:3000/api/v1/users', {
+        await axios.get(`${apiUrl}/users`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -36,7 +37,7 @@ const Home = () => {
     if (user) {
       callProtectedRoute();
     }
-  }, [user]); 
+  }, [user, getToken, apiUrl]); 
 
   return (
     <>

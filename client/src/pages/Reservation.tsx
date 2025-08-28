@@ -8,6 +8,7 @@ import { MapPinIcon } from "@heroicons/react/24/solid";
 
 
 const Reservation = () => {
+    const apiUrl = import.meta.env.VITE_BASE_API_URL
     const { eventId } = useParams();
     const navigate = useNavigate();
 
@@ -33,7 +34,7 @@ const Reservation = () => {
     const totalAmount = (TICKET_PRICE * quantity)/ 100;
 
     try {
-      const res = await axios.post("http://localhost:3000/api/v1/reservations", {
+      const res = await axios.post(`${apiUrl}reservations`, {
         name,
         eventName: event.title,
         location: event.location,

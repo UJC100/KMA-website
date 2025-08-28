@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
 import { useClerk, useUser, UserButton } from "@clerk/clerk-react";
 import { CreditCardIcon } from "@heroicons/react/24/outline";
@@ -26,7 +26,6 @@ const Navbar = ({onContactClick}: NavbarProps) => {
   const { openSignIn } = useClerk()
   const { user } = useUser();
   const navigate = useNavigate();
-  const location = useLocation();
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -40,7 +39,7 @@ const Navbar = ({onContactClick}: NavbarProps) => {
     };
   }, []);
 
-       const handleClick = (e, linkName) => {
+       const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, linkName: string) => {
             if (linkName === "Contact") {
             e.preventDefault();
             onContactClick();

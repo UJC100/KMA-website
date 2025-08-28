@@ -2,7 +2,7 @@ import axios from 'axios';
 import { useAuth } from '@clerk/clerk-react';
 import { useEffect } from 'react';
 
-function callProtectedRoute() {
+export default function ClerkComponent() {
   const { getToken } = useAuth();
 
   useEffect(() => {
@@ -24,4 +24,6 @@ function callProtectedRoute() {
 
     fetchData();
   }, [getToken]);
+
+  return null;
 }

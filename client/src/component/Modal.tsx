@@ -1,7 +1,11 @@
-import React from 'react';
 
 
-const Modal = ({isOpen, onClose}) => {
+type ModalProps = {
+  isOpen: boolean;
+  onClose: () => void;
+};
+
+const Modal = ({isOpen, onClose}: ModalProps) => {
   if (!isOpen) return null;
 
   return (

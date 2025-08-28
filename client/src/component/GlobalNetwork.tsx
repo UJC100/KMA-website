@@ -4,7 +4,7 @@ import {
   StarIcon,
   UsersIcon,
 } from "@heroicons/react/24/outline";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Title from "./Title";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";

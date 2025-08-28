@@ -1,4 +1,3 @@
-import React from "react";
 import Title from "./Title";
 import Carousel from "./Carousel";
 import AnimateOnScroll from "./AnimationOnScroll";
