@@ -21,6 +21,7 @@ async function bootstrap(): Promise<void> {
     origin: [
       'http://localhost:5173',
       'http://127.0.0.1:5173',
+      'https://kma-website.onrender.com',
       process.env.FRONTEND_ORIGIN ?? '',
     ].filter(Boolean),
     credentials: true,
