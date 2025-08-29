@@ -18,12 +18,13 @@ async function bootstrap(): Promise<void> {
 
   // Enable CORS
   app.enableCors({
-    origin: [
-      'http://localhost:5173',
-      'http://127.0.0.1:5173',
-      'https://kma-website.onrender.com',
-      process.env.FRONTEND_ORIGIN ?? '',
-    ].filter(Boolean),
+    origin:
+      process.env.NODE_ENV === 'production'
+        ? 'https://kma-website.onrender.com' // production frontend
+        : [
+            'http://localhost:5173', // dev Vite frontend
+            'http://127.0.0.1:5173', // dev Vite frontend alternative
+          ],
     credentials: true,
   });
 
