@@ -29,7 +29,18 @@ async function bootstrap(): Promise<void> {
   });
 
   // Security + performance
-  app.use(helmet());
+  app.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'", 'https://cdn.clerk.dev'], // add Clerk or other CDNs here
+        connectSrc: ["'self'", 'https://kma-website.onrender.com'], // for API calls
+        imgSrc: ["'self'", 'data:', 'https://images.clerk.dev'], // external images
+        styleSrc: ["'self'", "'unsafe-inline'"], // if using inline styles
+        fontSrc: ["'self'", 'https://fonts.gstatic.com'],
+      },
+    }),
+  );
   app.use(compression());
 
   // Global validation pipe
