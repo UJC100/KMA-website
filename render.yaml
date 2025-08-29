@@ -5,7 +5,13 @@ services:
     plan: free       
     region: sg       
     root: kma-server
-    buildCommand: npm run prebuild && npm run build
+    buildCommand: |
+      cd client && npm install && npm run build
+      cd ../kma-server && npm install && npm run build
+      # copy React build into Nest's public folder
+      rm -rf ./dist/public
+      mkdir -p ./dist/public
+      cp -r ../client/dist/* ./dist/public/
     startCommand: npm run start:prod
     envVars:
       - key: NODE_ENV
