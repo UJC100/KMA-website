@@ -44,7 +44,7 @@ async function bootstrap(): Promise<void> {
   app.setGlobalPrefix('api/v1');
 
   // Serve React build
-  const publicDir = join(__dirname, 'public');
+  const publicDir = join(__dirname, '..', 'public');
   app.useStaticAssets(publicDir);
   app.setBaseViewsDir(publicDir);
 
