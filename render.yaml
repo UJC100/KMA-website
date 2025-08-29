@@ -2,8 +2,9 @@ services:
   - type: web
     name: kma-server
     env: node
-    plan: free        # Change to 'free', 'starter', or 'standard' depending on your Render plan
-    region: sg       # Choose your preferred region
+    plan: free       
+    region: sg       
+    root: kma-server
     buildCommand: npm run prebuild && npm run build
     startCommand: npm run start:prod
     envVars:
