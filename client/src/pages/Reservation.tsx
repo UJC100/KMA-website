@@ -34,7 +34,7 @@ const Reservation = () => {
     const totalAmount = (TICKET_PRICE * quantity)/ 100;
 
     try {
-      const res = await axios.post(`${apiUrl}reservations`, {
+      const res = await axios.post(`${apiUrl}/reservations`, {
         name,
         eventName: event.title,
         location: event.location,
