@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Application Submission</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f9f9f9;
+      padding: 20px;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #4a90e2;
+    }
+    .section {
+      margin-bottom: 20px;
+    }
+    .section h3 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 5px;
+      color: #4a90e2;
+    }
+    .field {
+      margin: 8px 0;
+    }
+    .label {
+      font-weight: bold;
+      display: inline-block;
+      width: 140px;
+    }
+    .value {
+      display: inline-block;
+      color: #555;
+    }
+    .list {
+      margin: 0;
+      padding-left: 20px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>New Application Submission</h2>
+
+    <div class="section">
+      <h3>Personal Details</h3>
+      <div class="field"><span class="label">Full Name:</span> <span class="value">{{fullName}}</span></div>
+      <div class="field"><span class="label">Age:</span> <span class="value">{{age}}</span></div>
+      <div class="field"><span class="label">Email:</span> <span class="value">{{email}}</span></div>
+      <div class="field"><span class="label">Phone:</span> <span class="value">{{phone}}</span></div>
+      <div class="field"><span class="label">Occupation:</span> <span class="value">{{occupation}}</span></div>
+    </div>
+
+    <div class="section">
+      <h3>Motivations</h3>
+      <ul class="list">
+        <li>{{motivation1}}</li>
+        <li>{{motivation2}}</li>
+        <li>{{motivation3}}</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Challenges</h3>
+      <ul class="list">
+        <li>{{challenges1}}</li>
+        <li>{{challenges2}}</li>
+        <li>{{challenges3}}</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Commitments</h3>
+      <ul class="list">
+        <li>{{commitment1}}</li>
+        <li>{{commitment2}}</li>
+        <li>{{commitment3}}</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Vision & Agreement</h3>
+      <div class="field"><span class="label">Vision:</span> <span class="value">{{vision}}</span></div>
+      <div class="field"><span class="label">Agreement:</span> <span class="value">{{agreement}}</span></div>
+    </div>
+  </div>
+</body>
+</html>
