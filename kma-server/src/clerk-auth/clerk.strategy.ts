@@ -9,8 +9,8 @@ import { PassportStrategy } from '@nestjs/passport';
 import { Strategy } from 'passport-custom';
 import { Request } from 'express';
 import { ClerkClient, verifyToken } from '@clerk/backend';
-import { UsersService } from 'src/modules/v1/users/users.service';
-import { User } from 'src/modules/v1/users/schema/users.schema';
+import { UsersService } from '../modules/v1/users/users.service';
+import { User } from '../modules/v1/users/schema/users.schema';
 
 @Injectable()
 export class ClerkStrategy extends PassportStrategy(Strategy, 'clerk') {
