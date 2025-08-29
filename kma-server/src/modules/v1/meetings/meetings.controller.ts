@@ -2,7 +2,7 @@
 import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { MeetingsService } from './meetings.service';
 import { MeetingDto } from './dto/meetings.dto';
-import { Public } from 'src/common/decorators/public.decorator';
+import { Public } from '../../../common/decorators/public.decorator';
 
 @Controller('meetings')
 export class MeetingsController {

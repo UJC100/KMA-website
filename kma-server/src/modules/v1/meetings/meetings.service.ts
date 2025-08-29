@@ -10,7 +10,7 @@ import { Model } from 'mongoose';
 import { InjectModel } from '@nestjs/mongoose';
 import { MeetingDto } from './dto/meetings.dto';
 import { MailerService } from '@nestjs-modules/mailer';
-import { sendApplicationEmail } from 'src/common/email-templates/applicationEmail';
+import { sendApplicationEmail } from '../../../common/email-templates/applicationEmail';
 
 @Injectable()
 export class MeetingsService {

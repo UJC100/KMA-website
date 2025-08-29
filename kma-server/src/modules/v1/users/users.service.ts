@@ -9,7 +9,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { User, UserDocument } from './schema/users.schema';
 import { AssignMenteeDto, UpdateUserDto } from './dto/users.dto';
-import { RoleEnum } from 'src/common/enums/roles.enum';
+import { RoleEnum } from '../../../common/enums/roles.enum';
 
 @Injectable()
 export class UsersService {

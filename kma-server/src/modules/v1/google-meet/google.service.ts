@@ -1,6 +1,6 @@
 import { google } from 'googleapis';
 import { OAuth2Client } from 'google-auth-library';
-import { combineDateAndTimeToISO } from 'src/common/utils/date-time.helper';
+import { combineDateAndTimeToISO } from '../../../common/utils/date-time.helper';
 
 export class GoogleCalendarService {
   private oauth2Client: OAuth2Client;

@@ -10,7 +10,7 @@ import { Model, Types } from 'mongoose';
 import { User, UserDocument } from '../users/schema/users.schema';
 import { AddCommentDto, TeamSessionDto } from './dto/teamSession.dto';
 import { GoogleCalendarService } from '../google-meet/google.service';
-import { RoleEnum } from 'src/common/enums/roles.enum';
+import { RoleEnum } from '../../../common/enums/roles.enum';
 
 @Injectable()
 export class TeamSessionsService {

@@ -8,11 +8,11 @@ import {
   Param,
   Patch,
 } from '@nestjs/common';
-import { CurrentUser } from 'src/common/decorators/currentUser.decorator';
+import { CurrentUser } from '../../../common/decorators/currentUser.decorator';
 import { AssignMenteeDto, UpdateUserDto } from './dto/users.dto';
 
 import { UsersService } from './users.service';
-import { RoleEnum } from 'src/common/enums/roles.enum';
+import { RoleEnum } from '../../../common/enums/roles.enum';
 
 @Controller('users')
 export class UsersController {

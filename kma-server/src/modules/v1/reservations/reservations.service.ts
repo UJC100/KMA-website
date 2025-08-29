@@ -6,7 +6,7 @@ import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { CreateReservationDto } from './dto/reservation.dto';
 import { Reservation, ReservationDocument } from './schema/reservations.schema';
-import { PaymentGatewayService } from 'src/modules/v1/payment-gateway/payment-gateway.service';
+import { PaymentGatewayService } from '../../../modules/v1/payment-gateway/payment-gateway.service';
 import { MailerService } from '@nestjs-modules/mailer';
 
 @Injectable()

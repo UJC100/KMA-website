@@ -2,8 +2,8 @@ import { Body, Controller, Get, Param, Post } from '@nestjs/common';
 import { TeamSessionsService } from './team-sessions.service';
 import { AddCommentDto, TeamSessionDto } from './dto/teamSession.dto';
 import { TeamSession } from './schema/sessions.schema';
-import { CurrentUser } from 'src/common/decorators/currentUser.decorator';
-import { Public } from 'src/common/decorators/public.decorator';
+import { CurrentUser } from '../../../common/decorators/currentUser.decorator';
+import { Public } from '../../../common/decorators/public.decorator';
 
 @Controller('team-sessions')
 export class TeamSessionsController {
