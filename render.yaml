@@ -1,0 +1,40 @@
+services:
+  - type: web
+    name: kma-server
+    env: node
+    plan: free        # Change to 'free', 'starter', or 'standard' depending on your Render plan
+    region: sg       # Choose your preferred region
+    buildCommand: npm run prebuild && npm run build
+    startCommand: npm run start:prod
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        value: $MONGO_URI
+      - key: GOOGLE_CLIENT_ID
+        value: $GOOGLE_CLIENT_ID
+      - key: GOOGLE_CLIENT_SECRET
+        value: $GOOGLE_CLIENT_SECRET
+      - key: GOOGLE_REDIRECT_URI
+        value: $GOOGLE_REDIRECT_URI
+      - key: FRONTEND_ORIGIN
+        value: $FRONTEND_ORIGIN
+      - key: SMTP_USER
+        value: $SMTP_USER
+      - key: SMTP_PASSWORD
+        value: $SMTP_PASSWORD
+      - key: SMTP_PORT
+        value: $SMTP_PORT
+      - key: PAYMONGO_SECRET_KEY
+        value: $PAYMONGO_SECRET_KEY
+      - key: EMAIL_USER
+        value: $EMAIL_USER
+      - key: CLERK_SECRET_KEY
+        value: $CLERK_SECRET_KEY
+      - key: VITE_CLERK_PUBLISHABLE_KEY
+        value: $VITE_CLERK_PUBLISHABLE_KEY
+    buildEnvVars:
+      - key: NODE_ENV
+        value: production
+    autoDeploy: true
+    pullRequestPreviewsEnabled: false
