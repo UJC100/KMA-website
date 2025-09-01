@@ -1,9 +1,13 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 /* eslint-disable @typescript-eslint/no-unsafe-argument */
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
-import { Injectable } from '@nestjs/common';
+import {
+  BadRequestException,
+  Injectable,
+  NotFoundException,
+} from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
-import { Model } from 'mongoose';
+import { Model, Types } from 'mongoose';
 import { CreateReservationDto } from './dto/reservation.dto';
 import { Reservation, ReservationDocument } from './schema/reservations.schema';
 import { PaymentGatewayService } from '../../../modules/v1/payment-gateway/payment-gateway.service';
@@ -40,6 +44,16 @@ export class ReservationsService {
     });
   }
   async getReservationById(id: string): Promise<Reservation | null> {
-    return await this.reservationModel.findById(id).exec();
+    if (!Types.ObjectId.isValid(id)) {
+      throw new BadRequestException('Invalid reservation ID');
+    }
+
+    const reservation = await this.reservationModel.findById(id).exec();
+
+    if (!reservation) {
+      throw new NotFoundException('Reservation not found');
+    }
+
+    return reservation;
   }
 }
