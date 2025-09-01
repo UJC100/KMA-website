@@ -2,8 +2,8 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
-import helmet from 'helmet';
-import * as compression from 'compression';
+// import helmet from 'helmet';
+// import * as compression from 'compression';
 import { join } from 'path';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { Response, Request } from 'express';
@@ -29,8 +29,8 @@ async function bootstrap(): Promise<void> {
   });
 
   // Security + performance
-  app.use(helmet());
-  app.use(compression());
+  // app.use(helmet());
+  // app.use(compression());
 
   // Global validation pipe
   app.useGlobalPipes(
