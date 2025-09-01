@@ -20,7 +20,7 @@ const MakePayments = () => {
     const fetchReservations = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`${apiUrl}/${paymentId}`, {
+        const res = await axios.get(`${apiUrl}/reservations/${paymentId}`, {
             headers: {
                 "Content-Type": "application/json",
             },
