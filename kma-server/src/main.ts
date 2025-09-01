@@ -29,7 +29,7 @@ async function bootstrap(): Promise<void> {
   });
 
   // Security + performance
-  app.use(helmet.contentSecurityPolicy());
+  app.use(helmet());
   app.use(compression());
 
   // Global validation pipe
