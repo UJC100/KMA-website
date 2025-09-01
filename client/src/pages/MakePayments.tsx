@@ -4,7 +4,7 @@ import axios from "axios";
 import { assets } from "../assets/assets";
 
 interface Reservation {
-  id: string;
+  _id: string;
   eventName: string;
   amount: number;
   location: string;
