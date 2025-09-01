@@ -34,7 +34,7 @@ const MakePayments = () => {
     };
 
     fetchReservations();
-  }, [paymentId]);
+  }, [paymentId, apiUrl]);
   if (loading) {
     return <div>Loading...</div>;
   }
