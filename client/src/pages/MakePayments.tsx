@@ -14,7 +14,7 @@ interface Reservation {
 const MakePayments = () => {
    const apiUrl = import.meta.env.VITE_BASE_API_URL
     const {paymentId} = useParams();
-    const [reservations] = useState<Reservation | null>(null);
+    const [reservations, setReservations] = useState<Reservation | null>(null);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
     const fetchReservations = async () => {
@@ -25,8 +25,7 @@ const MakePayments = () => {
                 "Content-Type": "application/json",
             },
         });
-        // setReservations(res.data);
-        console.log(res.data)
+        setReservations(res.data);
       } catch (err) {
         console.error("Error fetching reservations:", err);
       } finally {
