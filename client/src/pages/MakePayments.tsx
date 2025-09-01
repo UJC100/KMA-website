@@ -14,18 +14,19 @@ interface Reservation {
 const MakePayments = () => {
    const apiUrl = import.meta.env.VITE_BASE_API_URL
     const {paymentId} = useParams();
-    const [reservations, setReservations] = useState<Reservation | null>(null);
+    const [reservations] = useState<Reservation | null>(null);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
     const fetchReservations = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`${apiUrl}/reservations/${paymentId}`, {
+        const res = await axios.get(`${apiUrl}/users`, {
             headers: {
                 "Content-Type": "application/json",
             },
         });
-        setReservations(res.data);
+        // setReservations(res.data);
+        console.log(res.data)
       } catch (err) {
         console.error("Error fetching reservations:", err);
       } finally {
