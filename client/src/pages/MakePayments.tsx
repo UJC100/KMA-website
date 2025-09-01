@@ -12,6 +12,7 @@ interface Reservation {
 }
 
 const MakePayments = () => {
+   const apiUrl = import.meta.env.VITE_BASE_API_URL
     const {paymentId} = useParams();
     const [reservations, setReservations] = useState<Reservation | null>(null);
     const [loading, setLoading] = useState(true);
@@ -19,7 +20,7 @@ const MakePayments = () => {
     const fetchReservations = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`http://localhost:3000/api/v1/reservations/${paymentId}`, {
+        const res = await axios.get(`${apiUrl}/${paymentId}`, {
             headers: {
                 "Content-Type": "application/json",
             },
