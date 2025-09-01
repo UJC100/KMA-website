@@ -23,6 +23,7 @@ import { join } from 'path';
     }),
     ServeStaticModule.forRoot({
       rootPath: join(__dirname, '..', 'public'), // React build here
+      exclude: ['/api/(.*)'],
     }),
     MongooseModule.forRootAsync({
       imports: [ConfigModule],

@@ -46,16 +46,16 @@ async function bootstrap(): Promise<void> {
   app.setGlobalPrefix('api/v1');
 
   // Serve React build
-  const publicDir = join(__dirname, '..', 'public');
-  app.useStaticAssets(publicDir);
-  app.setBaseViewsDir(publicDir);
+  // const publicDir = join(__dirname, '..', 'public');
+  // app.useStaticAssets(publicDir);
+  // app.setBaseViewsDir(publicDir);
 
-  // SPA fallback: only serve index.html if route does not start with /api
-  app.getHttpAdapter().get('/{*any}', (req: Request, res: Response) => {
-    if (!req.path.startsWith('/api')) {
-      res.sendFile(join(publicDir, 'index.html'));
-    }
-  });
+  // // SPA fallback: only serve index.html if route does not start with /api
+  // app.getHttpAdapter().get('/{*any}', (req: Request, res: Response) => {
+  //   if (!req.path.startsWith('/api')) {
+  //     res.sendFile(join(publicDir, 'index.html'));
+  //   }
+  // });
 
   // Graceful shutdown hooks
   app.enableShutdownHooks();
