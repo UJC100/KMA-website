@@ -51,7 +51,7 @@ const MakePayments = () => {
     {/* Left side: Reservation Details */}
     <div className="flex-1">
       <p className="inline-block rounded-md text-lg md:text-2xl bg-white font-semibold p-3 shadow-md">
-        Send payment receipts to this phone number via Whatsapp:
+        Send payment receipts to this phone number via Whatsapp: +63 945 524 3047
       </p>
 
       <h1 className="text-3xl md:text-6xl font-semibold mb-5 text-green-700 mt-5">
