@@ -10,7 +10,7 @@ import { MailerModule } from '@nestjs-modules/mailer';
       host: 'smtp.gmail.com',
       port:  587,
       auth: {
-        user: 'meetjohnchima@gmail.com',
+        user: 'kingdommentorshipacademy@gmail.com',
         pass: 'womx ongv btmc itrl'
       },
       secure: false,
