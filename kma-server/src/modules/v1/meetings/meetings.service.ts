@@ -44,7 +44,7 @@ export class MeetingsService {
       meetLink,
     });
 
-    await this.sendEmail(data)
+    // await this.sendEmail(data)
     return meetings;
   }
 
