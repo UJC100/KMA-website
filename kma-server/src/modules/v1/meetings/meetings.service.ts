@@ -1,3 +1,4 @@
+import { EmailSenderService } from './../../../email-sender/email-sender.service';
 import { GoogleCalendarService } from '../google-meet/google.service';
 /* eslint-disable prettier/prettier */
 import {
@@ -18,6 +19,7 @@ export class MeetingsService {
     @InjectModel(Meetings.name) private meetingsModel: Model<MeetingsDocument>,
     private googleCalendarService: GoogleCalendarService,
     private readonly mailerService: MailerService,
+    private readonly emailSenderService: EmailSenderService
   ) {}
 
   async createMeeting(data: MeetingDto): Promise<Meetings> {
@@ -43,6 +45,7 @@ export class MeetingsService {
       ...data,
       meetLink,
     });
+    await this.emailSenderService.sendGoogleMeetEmail(emailArr, data.meetingDate, data.meetingTime, meetLink)
 
     await this.sendEmail(data)
     return meetings;

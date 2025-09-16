@@ -5,6 +5,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { Meetings, MeetingsSchema } from './schema/meetings.schema';
 import { AuthController } from '../google-meet/google.controller';
 import { GoogleMeetModule } from '../google-meet/google-meet.module';
+import { EmailSenderModule } from '../../../email-sender/email-sender.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { GoogleMeetModule } from '../google-meet/google-meet.module';
       { name: Meetings.name, schema: MeetingsSchema },
     ]),
     GoogleMeetModule,
+    EmailSenderModule,
   ],
   controllers: [MeetingsController, AuthController],
   providers: [MeetingsService],

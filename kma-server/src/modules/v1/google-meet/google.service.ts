@@ -45,7 +45,6 @@ export class GoogleCalendarService {
         },
       },
     };
-    console.log(attendeesEmails);
 
     const response = await calendar.events.insert({
       calendarId: 'primary',
@@ -53,9 +52,6 @@ export class GoogleCalendarService {
       conferenceDataVersion: 1,
       sendUpdates: 'all',
     });
-    console.log(response.data.hangoutLink);
-
-    console.log(JSON.stringify(response.data, null, 2));
     return response.data.hangoutLink || '';
   }
 }
