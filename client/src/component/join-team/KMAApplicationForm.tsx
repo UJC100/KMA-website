@@ -16,6 +16,8 @@ import {
   FormControl,
   FormLabel,
 } from "@mui/material";
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
 import { amber } from "@mui/material/colors";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
@@ -57,8 +59,12 @@ export default function MentorshipForm() {
     meetingDate: "",
     meetingTime: "",
   });
-
   const [errors, setErrors] = useState<any>({}); // <-- error state
+  const [snackbar, setSnackbar] = useState({
+    open: false,
+    message: '',
+    severity: 'success' as 'success' | 'error',
+  });
 
   const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -137,14 +143,22 @@ export default function MentorshipForm() {
     );
 
     console.log("✅ Submission successful:", response.data);
-    alert("Form submitted successfully!");
+    setSnackbar({
+        open: true,
+        message: "Form submitted successfully!",
+        severity: "success",
+      });
     
     // Optionally reset the form
     // setFormData(initialFormData);
 
   } catch (error: any) {
     console.error("❌ Submission failed:", error.response || error.message);
-    alert("Form submission failed. Please try again.");
+    setSnackbar({
+        open: true,
+        message: "Form submission failed. Please try again.",
+        severity: "error",
+      });
   }
 };
 
@@ -154,10 +168,25 @@ export default function MentorshipForm() {
   const isStepComplete = requiredFields[activeStep].every(
     (field) => formData[field]?.trim() !== ""
   );
-  console.log(activeStep, steps.length);
+  // console.log(activeStep, steps.length);
 
   return (
     <Box className="max-w-3xl mx-auto p-4 sm:p-6 bg-white shadow-lg rounded-2xl m-2">
+      <Snackbar
+        open={snackbar.open}
+        autoHideDuration={4000}
+        onClose={() => setSnackbar({ ...snackbar, open: false })}
+        anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+      >
+        <MuiAlert
+          elevation={6}
+          variant="filled"
+          severity={snackbar.severity}
+          onClose={() => setSnackbar({ ...snackbar, open: false })}
+        >
+          {snackbar.message}
+        </MuiAlert>
+      </Snackbar>
       {/* Stepper */}
       <>
         {isSmallScreen ? (
