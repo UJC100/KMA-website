@@ -52,12 +52,12 @@ export class MeetingsService {
 //   // Optionally: continue without failing the whole request
 // }
 
-try {
-  await this.sendEmail(data);
-} catch (err) {
-  console.error("Application email failed:", err);
-  // Optionally: continue without failing the whole request
-}
+// try {
+//   await this.sendEmail(data);
+// } catch (err) {
+//   console.error("Application email failed:", err);
+//   // Optionally: continue without failing the whole request
+// }
 
     return meetings;
   }
