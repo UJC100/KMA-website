@@ -13,11 +13,12 @@ import { AssignMenteeDto, UpdateUserDto } from './dto/users.dto';
 
 import { UsersService } from './users.service';
 import { RoleEnum } from '../../../common/enums/roles.enum';
+import { Public } from '../../../common/decorators/public.decorator';
 
 @Controller('users')
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}
-
+  @Public()
   @Get()
   async getAllUsers() {
     return await this.usersService.getAllUsers();

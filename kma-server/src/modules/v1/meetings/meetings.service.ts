@@ -30,7 +30,7 @@ export class MeetingsService {
     const emailArr = [email, process.env.EMAIL_USER].filter(
       (e): e is string => typeof e === 'string',
     );
-    console.log(typeof(process.env.EMAIL_USER))
+    console.log(emailArr)
     const meetLink = await this.googleCalendarService.createMeet(
       meetingDate,
       meetingTime,
@@ -44,7 +44,7 @@ export class MeetingsService {
       meetLink,
     });
 
-    // await this.sendEmail(data)
+    await this.sendEmail(data)
     return meetings;
   }
 

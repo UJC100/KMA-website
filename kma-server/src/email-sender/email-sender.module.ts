@@ -11,7 +11,7 @@ import { MailerModule } from '@nestjs-modules/mailer';
       port:  587,
       auth: {
         user: 'kingdommentorshipacademy@gmail.com',
-        pass: 'womx ongv btmc itrl'
+        pass: 'ksjz xicb pmvy hypf'
       },
       secure: false,
     },

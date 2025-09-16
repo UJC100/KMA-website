@@ -2,6 +2,7 @@ import { Controller, Get, Query, Res } from '@nestjs/common';
 import { Response } from 'express';
 import { google } from 'googleapis';
 import { OAuth2Client } from 'google-auth-library';
+import { Public } from '../../../common/decorators/public.decorator';
 
 @Controller('auth')
 export class AuthController {
@@ -14,7 +15,7 @@ export class AuthController {
       process.env.GOOGLE_REDIRECT_URI,
     );
   }
-
+  @Public()
   @Get('google')
   getGoogleAuthUrl(@Res() res: Response) {
     const url = this.oauth2Client.generateAuthUrl({
@@ -29,10 +30,11 @@ export class AuthController {
     return res.redirect(url);
   }
 
+  @Public()
   @Get('google/callback')
   async googleAuthCallback(@Query('code') code: string) {
     const { tokens } = await this.oauth2Client.getToken(code);
     console.log('✅ Here are your tokens:', tokens);
     return `Copy this refresh token: ${tokens.refresh_token}`;
   }
-}
+} //http://localhost:3000/api/v1/auth/google/callback
