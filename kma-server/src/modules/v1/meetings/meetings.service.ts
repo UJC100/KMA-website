@@ -45,12 +45,12 @@ export class MeetingsService {
       ...data,
       meetLink,
     });
-   try {
-  await this.emailSenderService.sendGoogleMeetEmail(emailArr, meetingDate, meetingTime, meetLink);
-} catch (err) {
-  console.error("Email sending failed:", err);
-  // Optionally: continue without failing the whole request
-}
+//    try {
+//   await this.emailSenderService.sendGoogleMeetEmail(emailArr, meetingDate, meetingTime, meetLink);
+// } catch (err) {
+//   console.error("Email sending failed:", err);
+//   // Optionally: continue without failing the whole request
+// }
 
 try {
   await this.sendEmail(data);
