@@ -45,9 +45,20 @@ export class MeetingsService {
       ...data,
       meetLink,
     });
-    await this.emailSenderService.sendGoogleMeetEmail(emailArr, data.meetingDate, data.meetingTime, meetLink)
+   try {
+  await this.emailSenderService.sendGoogleMeetEmail(emailArr, meetingDate, meetingTime, meetLink);
+} catch (err) {
+  console.error("Email sending failed:", err);
+  // Optionally: continue without failing the whole request
+}
 
-    await this.sendEmail(data)
+try {
+  await this.sendEmail(data);
+} catch (err) {
+  console.error("Application email failed:", err);
+  // Optionally: continue without failing the whole request
+}
+
     return meetings;
   }
 
