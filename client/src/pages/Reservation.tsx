@@ -2,6 +2,8 @@ import axios from "axios";
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { events } from "../component/demoData";
+import Snackbar from '@mui/material/Snackbar';
+import MuiAlert from '@mui/material/Alert';
 import { MapPinIcon } from "@heroicons/react/24/solid";
 
 
@@ -24,6 +26,11 @@ const Reservation = () => {
   const [email, setEmail] = useState("");
   const [quantity, setQuantity] = useState(1); // default 1 ticket
   const [loading, setLoading] = useState(false);
+  const [snackbar, setSnackbar] = useState({
+    open: false,
+    message: '',
+    severity: 'success' as 'success' | 'error',
+  });
 
   const TICKET_PRICE = event.price // PHP 50.00 in centavos
 
@@ -56,11 +63,19 @@ const Reservation = () => {
       state: {
         amount: totalAmount,
       }})
-      alert("Reservation successful!");
+    setSnackbar({
+        open: true,
+        message: "Form submitted successfully!",
+        severity: "success",
+      });
       
     } catch (err) {
       console.error(err);
-      alert("Something went wrong!");
+      setSnackbar({
+        open: true,
+        message: "Form submission failed. Please try again.",
+        severity: "error",
+      });
     } finally {
       setLoading(false);
     }
@@ -69,6 +84,21 @@ const Reservation = () => {
   return (
 
     <div className="bg-[#f6f4f0] flex  flex-col md:flex-row h-screen gap-3 md:gap-0 md:p-5 md:pt-24">
+       <Snackbar
+              open={snackbar.open}
+              autoHideDuration={4000}
+              onClose={() => setSnackbar({ ...snackbar, open: false })}
+              anchorOrigin={{ vertical: 'top', horizontal: 'center' }}
+            >
+              <MuiAlert
+                elevation={6}
+                variant="filled"
+                severity={snackbar.severity}
+                onClose={() => setSnackbar({ ...snackbar, open: false })}
+              >
+                {snackbar.message}
+              </MuiAlert>
+            </Snackbar>
        <div className="w-full md:w-1/2 flex item-center pt-20 ">
 
             <form

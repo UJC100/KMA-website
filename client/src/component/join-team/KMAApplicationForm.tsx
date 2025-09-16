@@ -66,6 +66,27 @@ export default function MentorshipForm() {
     severity: 'success' as 'success' | 'error',
   });
 
+  const initialFormData = {
+  fullName: "",
+  age: "",
+  email: "",
+  phone: "",
+  occupation: "",
+  motivation1: "",
+  motivation2: "",
+  motivation3: "",
+  challenges1: "",
+  challenges2: "",
+  challenges3: "",
+  commitment1: "",
+  commitment2: "",
+  commitment3: "",
+  vision: "",
+  agreement: "",
+  meetingDate: "",
+  meetingTime: "",
+};
+
   const handleChange = (e: any) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
     setErrors({ ...errors, [e.target.name]: "" }); // clear error on change
@@ -150,7 +171,8 @@ export default function MentorshipForm() {
       });
     
     // Optionally reset the form
-    // setFormData(initialFormData);
+    setFormData(initialFormData);
+    setActiveStep(0);
 
   } catch (error: any) {
     console.error("❌ Submission failed:", error.response || error.message);
