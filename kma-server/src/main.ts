@@ -19,7 +19,10 @@ async function bootstrap(): Promise<void> {
   app.enableCors({
     origin:
       process.env.NODE_ENV === 'production'
-        ? 'https://kma-website.onrender.com' // production frontend
+        ? [
+            'https://kingdom-mentorship-academy.com',
+            'https://www.kingdom-mentorship-academy.com',
+          ] // production frontend
         : [
             'http://localhost:5173', // dev Vite frontend
             'http://127.0.0.1:5173', // dev Vite frontend alternative
