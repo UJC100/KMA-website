@@ -25,4 +25,7 @@ export class CreateReservationDto {
 
   @IsString()
   date: string;
+
+  @IsString()
+  ticketType: string;
 }

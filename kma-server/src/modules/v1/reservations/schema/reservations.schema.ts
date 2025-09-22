@@ -29,6 +29,9 @@ export class Reservation {
   @Prop({ required: true })
   quantity: number;
 
+  @Prop({ required: true })
+  ticketType: string;
+
   @Prop({ default: 'pending' })
   status: 'pending' | 'paid';
 }
