@@ -53,7 +53,7 @@ function App() {
             <Route path="/team" element={<Teams />} />
             <Route path="/events" element={<Events />} />
             <Route path="/reservation/:eventId" element={<Reservation />} />
-            <Route path="/payment/:paymentId" element={<MakePayments />} />
+            <Route path="/payment" element={<MakePayments />} />
             <Route path="*" element={<NotFound />} />
 
             {/* ✅ Nested routes for logged-in users */}

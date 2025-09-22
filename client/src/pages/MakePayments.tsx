@@ -50,8 +50,8 @@ const MakePayments = () => {
     
     {/* Left side: Reservation Details */}
     <div className="flex-1">
-      <p className="inline-block rounded-md text-lg md:text-2xl bg-white font-semibold p-3 shadow-md">
-        Send payment receipts to this phone number via Whatsapp: +63 945 524 3047
+      <p className="inline-block rounded-md text-lg md:text-2xl bg-red-200 text-red-900 font-semibold p-3 shadow-md">
+        Send payment receipts to this phone number via Whatsapp: <span className="font-extrabold text-4xl">+63 945 524 3047</span>
       </p>
 
       <h1 className="text-3xl md:text-6xl font-semibold mb-5 text-green-700 mt-5">
@@ -99,7 +99,7 @@ const MakePayments = () => {
           <h2 className="text-xl md:text-2xl font-semibold mb-3">BDO</h2>
           <img src={assets.BDOLogo} alt="BDO Logo" className="w-24 md:w-32 mb-3" />
           <p>Use BDO for secure online payments.</p>
-          <p className="text-lg md:text-2xl font-semibold font-serif">Account Number: </p>
+          <p className="text-lg md:text-2xl font-semibold font-serif">Account Number: 011170273937</p>
         </div>
       </div>
     </div>
