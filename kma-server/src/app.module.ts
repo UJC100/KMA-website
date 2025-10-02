@@ -14,6 +14,7 @@ import { GoogleMeetModule } from './modules/v1/google-meet/google-meet.module';
 import { TeamSessionsModule } from './modules/v1/team-sessions/team-sessions.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
