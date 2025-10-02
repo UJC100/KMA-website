@@ -42,7 +42,7 @@ import { AppController } from './app.controller';
     GoogleMeetModule,
     TeamSessionsModule,
   ],
-  controllers: [],
+  controllers: [AppController],
   providers: [
     ClerkClientProvider,
     {
