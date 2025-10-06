@@ -71,7 +71,7 @@ const Reservation = () => {
           },
         }
       );
-      console.log(res.data);
+      // console.log(res.data);
       navigate(`/payment/${res.data._id}`, {
         state: {
           amount: totalAmount,
