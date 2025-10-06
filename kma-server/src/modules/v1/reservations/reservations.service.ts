@@ -51,7 +51,7 @@ export class ReservationsService {
     const reservation = await this.reservationModel.findById(id).exec();
 
     if (!reservation) {
-      throw new NotFoundException('Reservation not found');
+      throw new NotFoundException('Reservation not Found');
     }
 
     return reservation;
