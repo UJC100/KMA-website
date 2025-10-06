@@ -23,8 +23,9 @@ import { AppController } from './app.controller';
       isGlobal: true,
     }),
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'public'), // React build here
-      exclude: ['/api/(.*)'],
+      rootPath: join(__dirname, '..', 'public'),
+      // Use a named wildcard to exclude all paths starting with /api
+      exclude: ['/api*wildcard'],
     }),
     MongooseModule.forRootAsync({
       imports: [ConfigModule],

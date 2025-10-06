@@ -6,7 +6,7 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "prebuild": "cd ../client && npm install && npm run build && mkdir -p ../kma-server/public && cp -r dist/* ../kma-server/public",
+    "prebuild": "cd ../client && npm install && npm run build && mkdir -p ../kma-server/dist/public && cp -r dist/* ../kma-server/dist/public/",
     "build": "tsc -p tsconfig.build.json",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
