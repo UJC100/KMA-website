@@ -6,6 +6,7 @@ import { ValidationPipe } from '@nestjs/common';
 // import * as compression from 'compression'
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { Response, Request } from 'express';
+import { join } from 'path';
 
 async function bootstrap(): Promise<void> {
   const app = await NestFactory.create<NestExpressApplication>(AppModule, {
@@ -48,6 +49,7 @@ async function bootstrap(): Promise<void> {
   app.setGlobalPrefix('api/v1');
 
   // Serve React build
+  app.useStaticAssets(join(__dirname, '..', 'dist/public'));
   // const publicDir = join(__dirname, '..', 'public');
   // app.useStaticAssets(publicDir);
   // app.setBaseViewsDir(publicDir);
