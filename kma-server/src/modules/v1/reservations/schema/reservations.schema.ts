@@ -23,6 +23,9 @@ export class Reservation {
   @Prop({ required: true })
   date: string;
 
+  @Prop({ required: false })
+  time: string;
+
   @Prop({ required: true })
   amount: number;
 

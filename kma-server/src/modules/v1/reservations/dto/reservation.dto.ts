@@ -1,4 +1,10 @@
-import { IsString, IsNotEmpty, IsEmail, IsNumber } from 'class-validator';
+import {
+  IsString,
+  IsNotEmpty,
+  IsEmail,
+  IsNumber,
+  IsOptional,
+} from 'class-validator';
 
 export class CreateReservationDto {
   @IsString()
@@ -25,6 +31,10 @@ export class CreateReservationDto {
 
   @IsString()
   date: string;
+
+  @IsString()
+  @IsOptional()
+  time: string;
 
   @IsString()
   ticketType: string;

@@ -6,12 +6,26 @@ import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 import { MapPinIcon } from "@heroicons/react/24/solid";
 
+export interface Event {
+  id: number;
+  date: string;
+  title: string;
+  image: string;
+  isPaid: boolean;
+  location: string;
+  regularPrice: number;
+  vipPrice: number;
+  couplesPrice: number;
+  time?: string;
+}
+
+
 const Reservation = () => {
   const apiUrl = import.meta.env.VITE_BASE_API_URL;
   const { eventId } = useParams();
   const navigate = useNavigate();
 
-  const event = events.find((eventData) => {
+  const event: Event | undefined = events.find((eventData) => {
     const eventIdSting = eventData.id.toString();
 
     if (eventData) return eventIdSting === eventId;
@@ -58,6 +72,7 @@ const Reservation = () => {
           eventName: event.title,
           location: event.location,
           date: event.date,
+          time: event.time,
           email,
           ticketType,
           quantity,

@@ -370,11 +370,12 @@ export const availableTimes = [
 export const events = [
   {
     id: 1,
-    date: "12 Dec, 2025",
+    date: "30 Nov, 2025",
+    time: "2:00pm",
     title: "KMA Gala Night",
     image: assets.eventImg1,
     isPaid: true,
-    location: "Taguig Event Center, Taguig, Manila",
+    location: "Youth Development Center Francisco Legaspi St. Maybunga, Pasig City, Manila",
     regularPrice: 100000,
     vipPrice: 200000,
     couplesPrice: 170000,
