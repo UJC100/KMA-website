@@ -12,7 +12,7 @@ export class PaymentGatewayService {
 
      constructor() {
       if(!process.env.PAYMONGO_SECRET_KEY) {
-        throw new Error('PAYMONGO_SECRET_KEY is not set in env!')
+        throw new Error('PAYMONGO_SECRET_KEY is not set in env!!')
       }
       this.paymongoSecretKey = process.env.PAYMONGO_SECRET_KEY;
      }
