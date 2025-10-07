@@ -35,7 +35,7 @@ export class UsersService {
       await user.save();
     }
 
-    console.log('this is from usersService SUCCESS:', user);
+    // console.log('this is from usersService SUCCESS:', user);
 
     return user;
   }
