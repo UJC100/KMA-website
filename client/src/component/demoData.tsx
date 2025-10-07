@@ -24,9 +24,11 @@ export const demoData = [
   },
   {
     picture: assets.teamMember2,
-    name: "Emma Davis",
-    country: "United Kingdom",
-    occupation: "UX Designer",
+    name: "Franklin Uche",
+    country: "Nigeria",
+    occupation: "Business Analyst",
+    profile:
+      "Bilingual Tech Support Analyst Previously Trainer, Social Media Manager, freelance Translator ",
     speech:
       "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!",
   },
@@ -130,9 +132,12 @@ export const demoData = [
   },
   {
     picture: assets.teamMember11,
-    name: "Sophia Dubois",
-    country: "France",
-    occupation: "Art Director",
+    name: "Mercy Bih",
+    country: "Cameroon",
+    occupation:
+      "Bilingual Tech Support Analyst",
+    profile:
+      "Bilingual Tech Support Analyst Previously Trainer, Social Media Manager, freelance Translator",
     speech:
       "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!",
   },
@@ -150,6 +155,19 @@ export const demoData = [
       "There is one truth I live by: creativity is not a hobby, it is life itself. It flows through every expression of who I am, whether I’m managing a brand on social media, designing graphics, creating fashion pieces, or producing content that speaks to the soul. I believe that life is too vast to be confined to one box. You don’t have to choose between your gifts; you can embrace them all and use them as tools to shape the world. Each skill, when aligned with vision, becomes a voice that speaks to hearts, builds influence, and leaves impact. My journey is a testimony that you can succeed by embracing all of who you are. If I can do it, balancing fashion, media, and design while building a brand of influence, then so can you.✨ YOU CAN DO IT ALL. YOU CAN HAVE IT ALL. AND YOU CAN MAKE IT COUNT.",
   },
   {
+    picture: assets.teamMember16,
+    name: "Josue Kasema Cingoyi",
+    country: "Congo",
+    occupation:
+      "Finance Analyst | Gospel Musician",
+    profile:
+      "A gospel artist, finance analyst with a heart for uplifting spirits and drawing people closer to God through music and creativity",
+    speech:
+      "The worst moment is not the day of a bad result, but the pretense of walking the wrong track.",
+    speech2:
+      "I am a gospel singer with a heart for uplifting spirits and drawing people closer to God through music. My songs are a testimony of God’s grace, and every note I sing is an offering of gratitude to Him. Beyond music, I am also a finance analyst with a passion for combining creativity, faith, and business insight to make a positive impact. My musical journey began at the age of 12, singing in my church choir. Long before that, I would sing at home with my brothers, inspired by my mother, who taught me to mean every word I sing. For me, music has always been more than a sound—it is a way to express my emotions, release my anxieties, and connect with the audience God has entrusted to me. I believe that every person is a gift of God to the world, and our responsibility is to make ourselves useful to His purpose. I have written many songs, and though I was once unsure if they would touch people, the feedback from my first release gave me the courage to keep going. At first, I struggled with comparing myself to famous artists, but joining KMA Academy changed my perspective. They taught me to believe in myself, embrace my unique gift, and love the voice God has given me. In addition to music, I carry a strong business mindset. With KMA’s guidance, I started a small perfume business, JK Smell Attraction, which sustained me during a difficult season of unemployment. That experience reminded me that trying is the first step toward success, and that failure is not an end, but a stage of growth. As I always say: the only real mistake is the one we learn nothing from. Today, I continue to grow in both music and business. I hold a three-year college certification in Business Informatics and currently serve as a Finance Analyst at Amazon. My journey reflects resilience, faith, and the pursuit of excellence—both in song and in service.",
+  },
+  {
     picture: assets.teamMember13,
     name: "Leandry Malon Pewo Wette",
     country: "Cameroon",
@@ -164,9 +182,9 @@ export const demoData = [
   },
   {
     picture: assets.teamMember15,
-    name: "Sophia Dubois",
-    country: "France",
-    occupation: "Art Director",
+    name: "Baby Joshua",
+    country: "Congo",
+    occupation: "Artist",
     speech:
       "It's for us to pause for a moment and remember what we’re capable of. Every challenge we face is an opportunity to grow, to learn, and to show what we’re made of. We’ve got the talent, the determination, and the drive to crush this. Let’s support each other, keep communicating, and stay focused on the goal. Together, we’re unstoppable. Let’s do this!",
   },

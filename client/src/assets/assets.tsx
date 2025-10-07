@@ -59,6 +59,8 @@ import teamMember12 from "./ruby.webp"
 import teamMember13 from "./leandry.webp"
 import teamMember14 from "./chima.webp"
 import teamMember15 from "./elijah.webp"
+import teamMember16 from "./joshua.jpeg"
+
 
 import astronaut from "./506b575739e90613428cdb399175e2c8-space-astronaut-cartoon.webp"
 import notFoundBg from "./notfoundbg_LE_upscale_balanced_x4.jpg"
@@ -138,6 +140,7 @@ export const assets = {
     teamMember13,
     teamMember14,
     teamMember15,
+    teamMember16,
     astronaut,
     notFoundBg,
     eventImg1,
