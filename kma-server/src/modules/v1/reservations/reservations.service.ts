@@ -12,6 +12,7 @@ import { CreateReservationDto } from './dto/reservation.dto';
 import { Reservation, ReservationDocument } from './schema/reservations.schema';
 import { PaymentGatewayService } from '../../../modules/v1/payment-gateway/payment-gateway.service';
 import { MailerService } from '@nestjs-modules/mailer';
+import { GoogleSheetsService } from './google-sheets.service';
 
 @Injectable()
 export class ReservationsService {
@@ -20,6 +21,7 @@ export class ReservationsService {
     private reservationModel: Model<ReservationDocument>,
     private readonly paymentService: PaymentGatewayService,
     private readonly mailService: MailerService,
+    private readonly googleSheetsService: GoogleSheetsService,
   ) {}
 
   async create(
@@ -30,6 +32,20 @@ export class ReservationsService {
       createReservationDto,
     ) as ReservationDocument;
     await reservation.save();
+
+    const createdAt = reservation.createdAt
+      ? new Date(reservation.createdAt).toLocaleString()
+      : new Date().toLocaleString();
+
+    const googleSheetId: string | undefined = process.env.GOOGLE_SPREADSHEET_ID;
+    if (!googleSheetId)
+      throw new BadRequestException('No googlesheet id found');
+
+    await this.googleSheetsService.addReservation(googleSheetId, {
+      ...reservation.toObject(),
+      createdAt,
+    });
+
     return reservation;
   }
 

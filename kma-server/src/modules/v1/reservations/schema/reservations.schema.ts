@@ -37,6 +37,12 @@ export class Reservation {
 
   @Prop({ default: 'pending' })
   status: 'pending' | 'paid';
+
+  @Prop()
+  createdAt?: Date;
+
+  @Prop()
+  updatedAt?: Date;
 }
 
 export const ReservationSchema = SchemaFactory.createForClass(Reservation);

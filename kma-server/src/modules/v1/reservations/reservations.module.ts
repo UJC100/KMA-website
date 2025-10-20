@@ -4,6 +4,7 @@ import { ReservationsController } from './reservations.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Reservation, ReservationSchema } from './schema/reservations.schema';
 import { PaymentGatewayService } from '../../../modules/v1/payment-gateway/payment-gateway.service';
+import { GoogleSheetsService } from './google-sheets.service';
 
 @Module({
   imports: [
@@ -11,7 +12,7 @@ import { PaymentGatewayService } from '../../../modules/v1/payment-gateway/payme
       { name: Reservation.name, schema: ReservationSchema },
     ]),
   ],
-  providers: [ReservationsService, PaymentGatewayService],
+  providers: [ReservationsService, PaymentGatewayService, GoogleSheetsService],
   controllers: [ReservationsController],
   exports: [ReservationsService, MongooseModule],
 })
