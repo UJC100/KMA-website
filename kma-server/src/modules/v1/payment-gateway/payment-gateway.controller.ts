@@ -4,6 +4,7 @@
 import { PaymentGatewayService } from './payment-gateway.service';
 import { ReservationsService } from '../reservations/reservations.service';
 import { CreateReservationDto } from '../reservations/dto/reservation.dto';
+import { Public } from '../../../common/decorators/public.decorator';
 
 
 
@@ -15,6 +16,7 @@ export class PaymentGatewayController {
     private readonly reservtionsService: ReservationsService
   ) {}
 
+  @Public()
   @Post('reserve')
   async reserveTicket(@Body() body: CreateReservationDto) {
 const { ticketType, quantity } = body;

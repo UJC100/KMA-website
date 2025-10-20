@@ -12,6 +12,7 @@ import {
 } from '@nestjs/common';
 import { Request, Response } from 'express';
 import { ReservationsService } from '../reservations/reservations.service';
+import { Public } from '../../../common/decorators/public.decorator';
 
 @Controller('webhooks/paymongo')
 export class PaymentWebhookController {
@@ -19,6 +20,8 @@ export class PaymentWebhookController {
     private readonly paymentGatewayService: PaymentGatewayService,
     private readonly reservationService: ReservationsService,
   ) {}
+
+  @Public()
   @Post()
   async handleWebhook(@Req() req: Request, @Res() res: Response) {
     try {
