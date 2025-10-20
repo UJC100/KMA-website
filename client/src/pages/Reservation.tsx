@@ -71,7 +71,7 @@ const Reservation = () => {
 
     try {
       const res = await axios.post(
-        `${apiUrl}/payment-gate/reserve`,
+        `${apiUrl}/payment-gateway/reserve`,
         {
           name,
           eventName: event.title,
