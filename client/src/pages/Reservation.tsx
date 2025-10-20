@@ -1,10 +1,11 @@
 import axios from "axios";
 import { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { events } from "../component/demoData";
 import Snackbar from "@mui/material/Snackbar";
 import MuiAlert from "@mui/material/Alert";
 import { MapPinIcon } from "@heroicons/react/24/solid";
+import PaymentModal from "../component/PaymentModal";
 
 export interface Event {
   id: number;
@@ -23,7 +24,7 @@ export interface Event {
 const Reservation = () => {
   const apiUrl = import.meta.env.VITE_BASE_API_URL;
   const { eventId } = useParams();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const event: Event | undefined = events.find((eventData) => {
     const eventIdSting = eventData.id.toString();
@@ -43,6 +44,10 @@ const Reservation = () => {
     message: "",
     severity: "success" as "success" | "error",
   });
+
+  const [showModal, setShowModal] = useState(false);
+  const [checkoutUrl, setCheckoutUrl] = useState("");
+
 
   let TICKET_PRICE; // PHP 50.00 in centavos
 
@@ -66,7 +71,7 @@ const Reservation = () => {
 
     try {
       const res = await axios.post(
-        `${apiUrl}/reservations`,
+        `${apiUrl}/payment-gate/reserve`,
         {
           name,
           eventName: event.title,
@@ -86,12 +91,17 @@ const Reservation = () => {
           },
         }
       );
-      // console.log(res.data);
-      navigate(`/payment/${res.data._id}`, {
-        state: {
-          amount: totalAmount,
-        },
-      });
+
+      const checkoutUrl = res.data?.checkoutUrl
+      
+      setCheckoutUrl(checkoutUrl)
+      setShowModal(true)
+
+      // navigate(`/payment/${res.data._id}`, {
+      //   state: {
+      //     amount: totalAmount,
+      //   },
+      // });
       setSnackbar({
         open: true,
         message: "Form submitted successfully!",
@@ -211,6 +221,16 @@ const Reservation = () => {
           </p>
         </div>
       </div>
+      {
+        showModal && (
+        <PaymentModal
+          checkoutUrl={checkoutUrl}
+          onClose={() => setShowModal(false)}
+          onSuccess={() => alert("Payment successful! 🎉")}
+          onCancel={() => alert("Payment cancelled.")}
+        />
+      )
+      }
     </div>
   );
 };

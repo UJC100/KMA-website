@@ -49,12 +49,16 @@ export class PaymentGatewayService {
               description: `Event Ticket Reservation - ${_id}`,
               remarks: 'Ticket Reservation',
               reference_number: _id.toString(),
+              payment_method_types: [
+                  'gcash',
+                  'card',
+                  'paymaya',
+                  'grab_pay',
+                ],
               success_redirect:
-                process.env.PAYMENT_SUCCESS_REDIRECT ??
-                'http://localhost:5173/confirmation',
+                process.env.PAYMENT_SUCCESS_REDIRECT,
               cancel_redirect:
-                process.env.PAYMENT_CANCEL_REDIRECT ??
-                'http://localhost:5173/reserve',
+                process.env.PAYMENT_CANCEL_REDIRECT,
             },
           },
         },
