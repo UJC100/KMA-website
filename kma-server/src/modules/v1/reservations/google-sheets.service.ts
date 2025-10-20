@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { google, sheets_v4 } from 'googleapis';
-import * as path from 'path';
+import { JWTInput } from 'google-auth-library';
 
 interface ReservationRow {
   name: string;
@@ -22,11 +22,18 @@ export class GoogleSheetsService {
   private sheets: sheets_v4.Sheets;
 
   constructor() {
+    const serviceAccountJson = process.env.GOOGLE_SERVICE_ACCOUNT_JSON;
+
+    if (!serviceAccountJson) {
+      throw new Error(
+        'Missing GOOGLE_SERVICE_ACCOUNT_JSON environment variable',
+      );
+    }
+
+    const credentials = JSON.parse(serviceAccountJson) as JWTInput; // parse the string to an object
+
     const auth = new google.auth.GoogleAuth({
-      keyFile: path.join(
-        __dirname,
-        '../../../config/google-service-account.json',
-      ),
+      credentials,
       scopes: ['https://www.googleapis.com/auth/spreadsheets'],
     });
 
