@@ -1,5 +1,5 @@
 import { IsEnum, IsInt, Min } from 'class-validator';
-import { TicketType } from 'src/common/enums/ticketType.enum';
+import { TicketType } from '../../../../common/enums/ticketType.enum';
 
 export class CreatePaymentDto {
   @IsEnum(TicketType, {
