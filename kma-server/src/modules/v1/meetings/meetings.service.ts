@@ -53,7 +53,7 @@ export class MeetingsService {
 // }
 
 this.sendEmail(data)
-  .catch(err => console.error("Application email failed:", err));
+  .catch(err => console.error("Application Email failed:", err));
 
 
     return meetings;
