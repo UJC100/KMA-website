@@ -56,4 +56,18 @@ export class ReservationsService {
 
     return reservation;
   }
+
+  async markAsPaid(referenceId: string) {
+    const reservation = await this.reservationModel.findById(referenceId);
+
+    if (!reservation) {
+      console.error(`Reservation not found for reference: ${referenceId}`);
+      return;
+    }
+
+    reservation.status = 'paid';
+    await reservation.save();
+
+    console.log(`✅ Reservation ${referenceId} marked as paid.`);
+  }
 }

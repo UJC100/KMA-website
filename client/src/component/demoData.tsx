@@ -75,7 +75,7 @@ export const demoData = [
     picture: assets.teamMember6,
     name: "NISSI",
     country: "Cameroon",
-    occupation: "ARTS AND ENTERTAINMENT MOGUL",
+    occupation: "ARTS AND ENTERTAINMENT | HUMAN PSYCHOLOGY",
     profile:
       "A natural born writer and this gift is the foundation on which I built myself to thrive in diverse creative scenes",
     speech:

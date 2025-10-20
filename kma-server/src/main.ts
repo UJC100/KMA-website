@@ -5,7 +5,7 @@ import { ValidationPipe } from '@nestjs/common';
 // import helmet from 'helmet';
 // import * as compression from 'compression'
 import { NestExpressApplication } from '@nestjs/platform-express';
-import { Response, Request } from 'express';
+import { Response, Request, raw, json } from 'express';
 import { join } from 'path';
 
 async function bootstrap(): Promise<void> {
@@ -47,6 +47,8 @@ async function bootstrap(): Promise<void> {
 
   // API prefix
   app.setGlobalPrefix('api/v1');
+  app.use('/webhooks/paymongo', raw({ type: 'application/json' }));
+  app.use(json());
 
   // Serve React build
   app.useStaticAssets(join(__dirname, '..', 'dist/public'));

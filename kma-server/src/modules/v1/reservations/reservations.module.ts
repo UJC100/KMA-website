@@ -13,5 +13,6 @@ import { PaymentGatewayService } from '../../../modules/v1/payment-gateway/payme
   ],
   providers: [ReservationsService, PaymentGatewayService],
   controllers: [ReservationsController],
+  exports: [ReservationsService, MongooseModule],
 })
 export class ReservationsModule {}
