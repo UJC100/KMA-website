@@ -39,7 +39,7 @@ export class ReservationsService {
 
     const googleSheetId: string | undefined = process.env.GOOGLE_SPREADSHEET_ID;
     if (!googleSheetId)
-      throw new BadRequestException('No googlesheet id found');
+      throw new BadRequestException('No googlesheet Id found');
 
     await this.googleSheetsService.addReservation(googleSheetId, {
       ...reservation.toObject(),
